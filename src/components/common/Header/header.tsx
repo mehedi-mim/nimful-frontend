@@ -1,6 +1,4 @@
 import React, { FC } from 'react';
-import './header.css';
-
 interface HeaderProps {
   // Define props here if needed
 }

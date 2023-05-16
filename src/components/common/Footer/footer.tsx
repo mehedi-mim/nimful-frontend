@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import './footer.css';
 
 interface FooterProps {
   // Define props here if needed
