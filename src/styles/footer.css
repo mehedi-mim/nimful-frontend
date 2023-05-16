@@ -1,7 +1,16 @@
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
+  /* Set fixed position at the bottom */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  /* Add styling and adjust as needed */
+  background-color: #0d524c;
+  padding: 5px;
+  text-align: center;
+  color: #ecd4d4;
+  font-weight: 100;
+  font-size: 13px;
+}
   

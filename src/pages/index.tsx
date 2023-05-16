@@ -1,6 +1,6 @@
 import Wrapper from '@/components/common/Wrapper';
 import React, { FC, useEffect, useState } from 'react';
-const Home1: FC = () => {
+const Home: FC = () => {
   const [data,setData]=useState<any>()
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/todos/1')
@@ -15,8 +15,9 @@ const Home1: FC = () => {
     <>
     <Wrapper>
     <div className="home">
-      <h1>Welcome to the Home Page<br/> Title: {data?.title}</h1>
-      <p>This is the content of the Home page !<br/> id: {data?.id}</p>
+      <h1 className='centered-text'>Welcome to nimful...!</h1>
+      {/* <h1>Welcome to the Home Page<br/> Title: {data?.title}</h1> */}
+      {/* <p>This is the content of the Home page !<br/> id: {data?.id}</p> */}
     </div>
     </Wrapper>
     </>
@@ -24,4 +25,4 @@ const Home1: FC = () => {
   );
 }
 
-export default Home1;
+export default Home;
