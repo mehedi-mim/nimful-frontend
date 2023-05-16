@@ -9,10 +9,10 @@ const Header: FC<HeaderProps> = () => {
       <nav className="navbar">
         <h1 className="logo">Neemful 🌼</h1>
         <ul className="nav-links">
-          <li><a href="localhost:3000/">Home</a></li>
-          <li><a href="localhost:3000/about">About me</a></li>
-          <li><a href="localhost:3000/login">Login</a></li>
-          <li><a href="localhost:3000/signup">Signup</a></li>
+          <li><a href="52.66.247.18:3000/">Home</a></li>
+          <li><a href="52.66.247.18:3000/about">About me</a></li>
+          <li><a href="52.66.247.18:3000/login">Login</a></li>
+          <li><a href="52.66.247.18:3000/signup">Signup</a></li>
         </ul>
       </nav>
     </header>
