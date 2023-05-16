@@ -7,7 +7,7 @@ interface FooterProps {
 const Footer: FC<FooterProps> = () => {
   return (
     <footer className="footer">
-      <p>&copy; {new Date().getFullYear()} Nimful. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} Neemful, All rights reserved.</p>
     </footer>
   );
 };
