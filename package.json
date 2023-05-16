@@ -29,5 +29,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/node": "20.1.5",
+    "@types/react": "18.2.6",
+    "typescript": "5.0.4"
+  }
 }

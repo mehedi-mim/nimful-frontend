@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-function AboutPage() {
+const AboutPage: FC = () => {
   return (
     <div className="about-page">
-      <h1>About Page</h1>
+      <h1>About Page.</h1>
       <p>This is the about page content.</p>
     </div>
   );
