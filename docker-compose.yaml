@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  nimful-frontend:
+    image: nimful-frontend
+    container_name: nimful-frontend
+    ports:
+      - 3000:3000
