@@ -15,7 +15,7 @@ const Signup = () => {
 
   return (
     <div>
-      <h2>Signup</h2>
+      <h2>🖊️ Signup</h2>
       <form onSubmit={handleSignup}>
         <input
           type="text"
@@ -53,7 +53,7 @@ const Signup = () => {
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
-        <button type="submit">Sign Up</button>
+        <button type="submit">Signup</button>
       </form>
     </div>
   );
