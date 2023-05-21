@@ -9,7 +9,7 @@ const Login = () => {
   useEffect(() => {
     const access_token = localStorage.getItem('access_token');
     if (access_token) {
-      window.location.href = 'http://52.66.247.18:3000/';
+      window.location.href = '/';
     }
   }, []);
 
@@ -36,7 +36,7 @@ const Login = () => {
         const success_data = await response.json();
         localStorage.setItem('access_token', success_data.access_token);
         toast.success('Login successful');
-        window.location.href = 'http://52.66.247.18:3000/'; // Redirect to the Home page
+        window.location.href = '/'; // Redirect to the Home page
       } else {
         toast.error('Login failed');
       }

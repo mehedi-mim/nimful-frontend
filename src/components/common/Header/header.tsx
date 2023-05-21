@@ -27,11 +27,11 @@ const Header: FC<HeaderProps> = () => {
         <h1 className="logo">Nimful 🌼</h1>
         <ul className="nav-links">
           <li>
-            <a href="http://52.66.247.18:3000/">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>|</li>
           <li>
-            <a href="http://52.66.247.18:3000/about">About me</a>
+            <a href="/about">About me</a>
           </li>
           {isLoggedIn ? (
             <>
@@ -44,11 +44,11 @@ const Header: FC<HeaderProps> = () => {
             <>
               <li>|</li>
               <li>
-                <a href="http://52.66.247.18:3000/login">Login</a>
+                <a href="/login">Login</a>
               </li>
               <li>|</li>
               <li>
-                <a href="http://52.66.247.18:3000/signup">Signup</a>
+                <a href="/signup">Signup</a>
               </li>
             </>
           )}

@@ -16,7 +16,7 @@ const Signup = () => {
   useEffect(() => {
     const access_token = localStorage.getItem('access_token');
     if (access_token) {
-      window.location.href = 'http://52.66.247.18:3000/';
+      window.location.href = '/';
     }
   }, []);
 
@@ -54,7 +54,7 @@ const Signup = () => {
         // Signup successful
         const data = await response.text();
         toast.success(data);
-        window.location.href = 'http://52.66.247.18:3000/login'; 
+        window.location.href = '/login'; 
         
       } else {
         // Signup failed
@@ -71,42 +71,49 @@ const Signup = () => {
     <div>
       <h2>🖊️ Signup</h2>
       <form onSubmit={handleSignup}>
+        <h6>Username</h6>
         <input
           type="text"
           placeholder="username"
           value={username}
           onChange={(e) => setUserName(e.target.value)}
         />
+        <h6>First Name</h6>
         <input
           type="text"
           placeholder="First Name"
           value={first_name}
           onChange={(e) => setFirstName(e.target.value)}
         />
+        <h6>Last Name</h6>
         <input
           type="text"
           placeholder="Last Name"
           value={last_name}
           onChange={(e) => setSurname(e.target.value)}
         />
+        <h6>Email</h6>
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        <h6>Password</h6>
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        <h6>Confirm Password</h6>
         <input
           type="password"
           placeholder="Confirm Password"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
+        <h6>Phone Number</h6>
         <input
           type="tel"
           placeholder="Phone Number"

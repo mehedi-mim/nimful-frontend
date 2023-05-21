@@ -8,6 +8,10 @@
 @import './login.css';
 @import './sidebar.css';
 @import './about.css';
+@import './verification.css';
+@import './failed.css';
+@import './success.css';
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
