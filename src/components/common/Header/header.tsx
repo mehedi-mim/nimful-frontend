@@ -37,7 +37,7 @@ const Header: FC<HeaderProps> = () => {
             <>
               <li>|</li>
               <li>
-                <a onClick={handleLogout}>Logout</a>
+                <a href="/login" onClick={handleLogout}>Logout</a>
               </li>
             </>
           ) : (

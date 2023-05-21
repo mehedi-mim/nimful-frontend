@@ -18,7 +18,7 @@ const Home: FC = () => {
       <Wrapper>
         <div className="home">
           <div className="centered-container">
-            <img src="https://scontent.fdac2-2.fna.fbcdn.net/v/t39.30808-6/217460943_344930350489516_8988950508133420915_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHIxB7_bphY4SGK3sO54mxF-LOs0POT6xv4s6zQ85PrG0jY9zP0ohdi6G107wLvw6c7v9CQaChCx8vNucnil1Ah&_nc_ohc=1JTdJHmr2pgAX9jubOj&_nc_zt=23&_nc_ht=scontent.fdac2-2.fna&oh=00_AfD8gLZMr4DqPHSxf8I_sSjnr7zl1eLcL6i_-Li_alcMtQ&oe=6467DC2E" alt="Profile" className="profile-image" />
+            <img src="https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/229479735_362793798703171_1492424794974034692_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeG--978F3u2a5cq_O1JyuBsFHxdEIxK9OkUfF0QjEr06Y6r7JCTRCXWh67ohEyXWTa9xg0mPlZgXVWPXMmzVo6O&_nc_ohc=cqpTPiXsMb8AX9x_grB&_nc_ht=scontent.fdac138-2.fna&oh=00_AfCYoXRnawLB89DNSHZ6PbI7bpGRFAybzD6A3bI8KYBH2A&oe=646E4B1C" alt="Profile" className="profile-image" />
           </div>
           <h1>Welcome to nimful...! 🖤</h1>
           {/* <h1>Welcome to the Home Page<br/> Title: {data?.title}</h1> */}
