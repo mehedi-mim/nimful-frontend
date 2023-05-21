@@ -1,13 +1,50 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect  } from 'react';
+import { toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    // Add your login logic here
-    // You can access the form values using the state variables (email, password)
+  useEffect(() => {
+    const access_token = localStorage.getItem('access_token');
+    if (access_token) {
+      window.location.href = 'http://52.66.247.18:3000/';
+    }
+  }, []);
+
+
+
+  const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const loginData = {
+      email,
+      password,
+    };
+    
+    try {
+      // Perform login logic
+      const response = await fetch('http://localhost:8080/api/v1/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(loginData)
+      });
+
+      if (response.ok) {
+        const success_data = await response.json();
+        localStorage.setItem('access_token', success_data.access_token);
+        toast.success('Login successful');
+        window.location.href = 'http://52.66.247.18:3000/'; // Redirect to the Home page
+      } else {
+        toast.error('Login failed');
+      }
+    } catch (error) {
+      toast.error('An error occurred');
+    }
   };
+
 
   return (
     <div>
