@@ -1,7 +1,16 @@
-.word-cloud-container {
-    height: 500px;
-    width: 800px;
-    border: 2px solid rgb(103, 199, 103);
-    
-  }
-  
+.webcloud-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.webcloud-page .webcloud-container {
+  padding: 30px;
+  border: 1px solid #a5cf0e;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 1000px;
+  height: 800px;
+}

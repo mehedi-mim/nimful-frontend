@@ -13,6 +13,7 @@
     background-color: #f8f8f8;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 400px;
+    text-align: center;
   }
   
   .login-container h2 {
@@ -47,4 +48,9 @@
   .login-home {
     align-items: center;
     height: 100vh;
+  }
+
+  .click {
+    color: rgb(153, 161, 31);
+    margin-top: 10px;
   }

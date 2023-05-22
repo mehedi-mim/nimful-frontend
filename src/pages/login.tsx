@@ -12,6 +12,7 @@ const LoginPage: FC = () => {
           <div className="login-container">
           <ToastContainer />
             <Login />
+            <h1>New Here..? <a className='click' href='/signup'>Signup</a></h1>
           </div>
         </div>
         </div>

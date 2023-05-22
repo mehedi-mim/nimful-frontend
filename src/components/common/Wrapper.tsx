@@ -1,16 +1,16 @@
-import { ReactElement ,useState} from "react"
+import { ReactElement, useState } from "react"
 import Sidebar from "../SideBar/sidebar-comp"
 import Footer from "./Footer/footer"
 import Header from "./Header/header"
 
-const Wrapper=({children}:{children:ReactElement})=>{
+const Wrapper = ({ children }: { children: ReactElement }) => {
 
-    return(
+    return (
         <>
-<Header/>
-{children}
-<Footer/>
-</>
+            <Header />
+            {children}
+            <Footer />
+        </>
     )
 }
 export default Wrapper
