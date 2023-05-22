@@ -24,6 +24,7 @@ const Header: FC<HeaderProps> = () => {
   return (
     <header className="header">
       <nav className="navbar">
+        
         <h1 className="logo">Nimful 🌼</h1>
         <ul className="nav-links">
           <li>
