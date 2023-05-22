@@ -6,12 +6,18 @@ import 'tippy.js/animations/scale.css';
 interface WordCloudProps {
   data: { text: string; value: number }[];
 }
-
-const WordCloud: React.FC<WordCloudProps> = ({ data }) => {
+const wordCloudData = [
+  { text: 'Facebook', value: 10 },
+  { text: 'slack', value: 7 },
+  { text: 'youtube', value: 5 },
+  // Add more words...
+];
+const WordCloud = ({ data }:{data:WordCloudProps}) => {
   console.log(data)
   return (
     <div className="word-cloud-container">
-      <ReactWordcloud words={data} />
+      {!!wordCloudData.length &&
+      <ReactWordcloud words={wordCloudData} /> }
     </div>
   );
 };

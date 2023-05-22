@@ -1,19 +1,29 @@
-import WordCloud from '@/components/wordclouds/cloud';
+// import WordCloud from '@/components/wordclouds/cloud';
 import React from 'react';
+import dynamic from 'next/dynamic'
+import {render} from 'react-dom';
+import Wrapper from '@/components/common/Wrapper';
 
-const ParentComponent: React.FC = () => {
-  const wordCloudData = [
-    { text: 'Lorem', value: 10 },
-    { text: 'ipsum', value: 7 },
-    { text: 'dolor', value: 5 },
-    // Add more words...
-  ];
+const WordCloud = dynamic(
+  () => import('react-d3-cloud'),
+  { ssr: false }
+)
+const data = [
+  { text: 'Hey', value: 1000 },
+  { text: 'lol', value: 200 },
+  { text: 'first impression', value: 800 },
+  { text: 'very cool', value: 1000000 },
+  { text: 'duck', value: 10 },
+];
 
+const ParentComponent= () => {
   return (
-    <div>
-      <h1>Word Cloud Example</h1>
-      <WordCloud data={wordCloudData} />
+    <Wrapper>
+     <div className='word-cloud-container'>
+      <WordCloud data={data} />
     </div>
+    </Wrapper>
+    
   );
 };
 
