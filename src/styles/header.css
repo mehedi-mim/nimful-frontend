@@ -1,9 +1,15 @@
 .header {
-    background-color: #0d524c;
-    color: #bbce13;
-    padding: 5px;
-    font-weight: 200;
-  }
+  background-color: #0d524c;
+  color: #bbce13;
+  padding: 5px;
+  font-weight: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
   
   .navbar {
     display: flex;

@@ -1,0 +1,11 @@
+.left-sidebar {
+    position: fixed;
+    top: 40px; /* Adjust the value to match the height of your header */
+    bottom: 40px; /* Adjust the value to match the height of your footer */
+    left: 0;
+    width: 300px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    /* Add any other styles you want */
+  }
+  

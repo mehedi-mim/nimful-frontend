@@ -12,6 +12,8 @@
 @import './failed.css';
 @import './success.css';
 @import './wordcloud.css';
+@import './right_sidebar.css';
+@import './left_sidebar.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;

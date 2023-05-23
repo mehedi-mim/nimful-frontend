@@ -1,0 +1,11 @@
+.right-wrapper {
+    position: fixed;
+    top: 40px; /* Adjust the value to match the height of your header */
+    bottom: 40px; /* Adjust the value to match the height of your footer */
+    right: 0;
+    width: 250px;
+    border-left: 1px solid #ccc;
+    padding: 10px;
+    /* Add any other styles you want */
+  }
+  

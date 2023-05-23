@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 
 const AboutPage: FC = () => {
   return (
-    <Wrapper>
+    <Wrapper hasLeftSidebar={true} hasRightWrapper={true}>
   <div className="home">
     <div className="centered-container">
       <img src="https://media.licdn.com/dms/image/D5603AQGwjVWpTk_u-Q/profile-displayphoto-shrink_800_800/0/1676829458370?e=1689811200&v=beta&t=HuxVWWR2-rjsjX3XmEZx5Rou1hACRKUzPQ2xpyNWTgA" alt="Profile" className="profile-image" />

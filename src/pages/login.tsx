@@ -6,7 +6,7 @@ import { ToastContainer } from 'react-toastify';
 
 const LoginPage: FC = () => {
   return (
-    <Wrapper>
+    <Wrapper hasLeftSidebar={true} hasRightWrapper={true}>
         <div className='login-home'>
         <div className="login-page">
           <div className="login-container">
