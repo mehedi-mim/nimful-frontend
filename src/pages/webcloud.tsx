@@ -57,7 +57,7 @@ const ParentComponent = () => {
   }, []);
 
   return (
-    <Wrapper hasLeftSidebar={true} hasRightWrapper={true}>
+    <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
        <div className="webcloud-page">
        <ToastContainer />
         <div className="webcloud-container">

@@ -9,7 +9,10 @@
   background-color: #0d524c;
   padding: 5px;
   text-align: center;
-  color: #080808;
+}
+
+.footer p{
+  color: #CCCCCC;
   font-weight: 200;
-  font-size: 13px;
+  font-size: 12;
 }

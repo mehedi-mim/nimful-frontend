@@ -1,10 +1,12 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    margin:10%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Add this line to vertically center the content */
+  height: calc(100vh - (45px + 10px + 50px)); /* Adjust the values to account for the header, footer, and sidebar heights */
+  margin: 45px 240px 50px 310px; /* Adjust the margin values to account for the sidebar width */
+}
+
   
   .centered-container {
     text-align: center;

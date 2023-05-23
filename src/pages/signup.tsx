@@ -6,7 +6,7 @@ import React, { FC } from 'react';
 
 const SingUpPage: FC = () => {
   return (
-    <Wrapper hasLeftSidebar={true} hasRightWrapper={true}>
+    <Wrapper hasLeftSidebar={false} hasRightWrapper={false}>
       <div className="signup-page">
         <div className="signup-container">
         <ToastContainer />

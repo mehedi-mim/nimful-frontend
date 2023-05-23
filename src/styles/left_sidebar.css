@@ -1,11 +1,39 @@
 .left-sidebar {
-    position: fixed;
-    top: 40px; /* Adjust the value to match the height of your header */
-    bottom: 40px; /* Adjust the value to match the height of your footer */
-    left: 0;
-    width: 300px;
-    border-right: 1px solid #ccc;
-    padding: 10px;
-    /* Add any other styles you want */
-  }
-  
+  position: fixed;
+  top: 46px;
+  left: 0;
+  bottom: 50px; /* Adjust the value as needed */
+  height: calc(100vh - 80px); /* Calculate the height based on the header and footer */
+  width: 300px;
+  background-color: #fdfafa;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.sidebar-subsections {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-subsections li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.sidebar-subsections li:hover {
+  color: #000;
+  font-weight: bold;
+}

@@ -1,38 +1,39 @@
-.sidebar {
-    position: fixed;
-    top: 45px;
-    left: 0;
-    bottom: 10px;
-    height: 100vh;
-    width: 300px;
-    background-color: rgba(0, 0, 0, 0.5); /* Set the desired transparency level */
-    z-index: 9999; /* Adjust the z-index value to ensure the sidebar appears above other contents */
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 10px;
-  }
-  
-  .sidebar-content {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-  }
-  
-  .sidebar-header {
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .sidebar-subsections {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    color: #fff;
-  }
-  
-  .sidebar-subsections li {
-    font-size: 14px;
-  }
-  
+.left-sidebar {
+  position: fixed;
+  top: 45px;
+  left: 0;
+  bottom: 10px;
+  height: 100vh;
+  width: 300px;
+  background-color: #f2f2f2;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar-subsections {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-subsections li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.sidebar-subsections li:hover {
+  color: #000;
+  font-weight: bold;
+}

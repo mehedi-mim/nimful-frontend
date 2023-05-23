@@ -1,4 +1,4 @@
-import React, { FC, useState,useEffect } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 
 interface HeaderProps {
   // Define props here if needed
@@ -6,15 +6,15 @@ interface HeaderProps {
 
 const Header: FC<HeaderProps> = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  
+
   useEffect(() => {
     const access_token = localStorage.getItem('access_token');
     if (access_token) {
       setIsLoggedIn(true);
     }
   }, []);
-  
-  
+
+
   const handleLogout = () => {
     localStorage.removeItem('access_token');
     setIsLoggedIn(false);
@@ -24,9 +24,14 @@ const Header: FC<HeaderProps> = () => {
   return (
     <header className="header">
       <nav className="navbar">
-        
-        <h1 className="logo">Nimful 🌼</h1>
+
+        <h1 className="logo"><a href="/">Nimful 🌿</a></h1>
         <ul className="nav-links">
+        <li>
+            <a href="/webcloud">☁️</a>
+          </li>
+          <li>|</li>
+        
           <li>
             <a href="/">Home</a>
           </li>
@@ -40,6 +45,10 @@ const Header: FC<HeaderProps> = () => {
               <li>
                 <a href="/login" onClick={handleLogout}>Logout</a>
               </li>
+              <li>|</li>
+              <li>
+                <a href="/">☠</a>
+              </li>
             </>
           ) : (
             <>
@@ -51,6 +60,7 @@ const Header: FC<HeaderProps> = () => {
               <li>
                 <a href="/signup">Signup</a>
               </li>
+              
             </>
           )}
         </ul>

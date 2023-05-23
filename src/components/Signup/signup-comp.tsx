@@ -71,52 +71,45 @@ const Signup = () => {
     <div>
       <h2>🖊️ Signup</h2>
       <form onSubmit={handleSignup}>
-        <h6>Username</h6>
         <input
           type="text"
-          placeholder="username"
+          placeholder="Username"
           value={username}
           onChange={(e) => setUserName(e.target.value)}
         />
-        <h6>First Name</h6>
         <input
           type="text"
           placeholder="First Name"
           value={first_name}
           onChange={(e) => setFirstName(e.target.value)}
         />
-        <h6>Last Name</h6>
         <input
           type="text"
           placeholder="Last Name"
           value={last_name}
           onChange={(e) => setSurname(e.target.value)}
         />
-        <h6>Email</h6>
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <h6>Password</h6>
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <h6>Confirm Password</h6>
         <input
           type="password"
           placeholder="Confirm Password"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
-        <h6>Phone Number</h6>
         <input
           type="tel"
-          placeholder="Phone Number"
+          placeholder="Phone Number (+880)"
           value={mobile}
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
