@@ -1,54 +1,34 @@
-// import WordCloud from '@/components/wordclouds/cloud';
-import React ,{ useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic'
 import Wrapper from '@/components/common/Wrapper';
 import { ToastContainer } from 'react-toastify';
-import { toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 
 const WordCloud = dynamic(
   () => import('react-d3-cloud'),
   { ssr: false }
 )
-const data = [
-  { text: 'facebook.com', value: 1000 },
-  { text: 'instagram.com', value: 200 },
-  { text: 'slack.com', value: 800 },
-  { text: 'nimful.com', value: 100 },
-  { text: 'duck.com', value: 1000 },
-  { text: 'microsoft.com', value: 100 },
-  { text: 'google.com', value: 200 },
-  { text: 'facebook.com', value: 800 },
-  { text: 'twitter.com', value: 100 },
-  { text: 'stackoverflow.com', value: 1000 },
-  { text: 'linkedin.com', value: 100 },
-  { text: 'indeed.com', value: 2000 },
-  { text: 'stickler.com', value: 800 },
-  { text: 'pihr.com', value: 100 },
-  { text: 'moron.com', value: 1000 },
-  { text: 'stripe.com', value: 200 },
-  { text: 'youtube.com', value: 800 },
-  { text: 'chatgpt.com', value: 100 },
-  { text: 'blabla.com', value: 1000 },
-  { text: 'oracle.com', value: 100 },
-  { text: 'beam.com', value: 200 },
-  { text: 'codealgo.com', value: 800 },
-  { text: 'nabisco.com', value: 100 },
-  { text: 'stock.com', value: 1000 },
-  { text: 'football.com', value: 100 },
-  { text: 'mangrove.com', value: 200 },
-  { text: 'maxflow.com', value: 800 },
-  { text: 'future.com', value: 1000 }
-]
+
 const ParentComponent = () => {
+  const [data, setData] = useState([
+    { text: 'login.com', value: 1000 },
+    { text: 'signup.com', value: 200 },
+    { text: 'no-cloud.com', value: 800 },
+    { text: 'hurry-up.com', value: 100 },
+    { text: 'nimful.com', value: 1000 },
+    { text: 'no-visits.com', value: 100 },
+    { text: 'nothing.com', value: 200 },
+    { text: 'go-fast.com', value: 800 }
+  ]);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       const access_token = localStorage.getItem('access_token');
       if (!access_token) {
         toast.error('Please login!');
         setTimeout(() => {
-          window.location.href = '/login'; 
+          window.location.href = '/login';
         }, 3000);
       }
     });
@@ -56,16 +36,40 @@ const ParentComponent = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const access_token = localStorage.getItem('access_token');
+
+    // Make your API call here and replace the placeholder URL with your actual API endpoint
+    fetch('http://localhost:8080/api/v1/web-cloud', {
+      headers: {
+        'access_token': `${access_token}`
+      }
+    })
+      .then(response => response.json())
+      .then(responseData => {
+        // Check if the response data is an empty array
+        if (Array.isArray(responseData) && responseData.length === 0) {
+          // If the response data is an empty array, keep the existing data as it is
+          setData(data);
+        } else {
+          // If the response data is not an empty array, assign the response data to the data variable
+          setData(responseData);
+        }
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
+  console.log(data)
   return (
     <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
-       <div className="webcloud-page">
-       <ToastContainer />
+      <div className="webcloud-page">
+        <ToastContainer />
         <div className="webcloud-container">
-        <WordCloud data={data} />
+          <WordCloud data={data} />
         </div>
       </div>
     </Wrapper>
-    
   );
 };
 
