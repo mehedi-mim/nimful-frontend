@@ -38,7 +38,7 @@ const Header: FC<HeaderProps> = () => {
               </li>
               <li>|</li>
               <li>
-                <a href="/">☠</a>
+                <a href="/profile">☠</a>
               </li>
             </>
           ) : (
