@@ -1,5 +1,4 @@
 import Wrapper from '@/components/common/Wrapper';
-import Sidebar from '@/components/SideBar/sidebar-comp';
 import React, { FC, useEffect, useState } from 'react';
 const Home: FC = () => {
   const [data, setData] = useState<any>()

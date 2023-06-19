@@ -1,5 +1,4 @@
 import { ReactElement, useState } from "react"
-import Sidebar from "../SideBar/sidebar-comp"
 import Footer from "./Footer/footer"
 import Header from "./Header/header"
 import LeftSideBar from "./LeftSideBar/left_sidebar"

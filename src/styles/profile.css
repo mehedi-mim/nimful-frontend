@@ -1,0 +1,50 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    padding: 20px;
+    margin-left: 300px; /* Adjust the margin as per your sidebar width */
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 10px;
+
+
+  }
+  
+  .edit-button {
+    background-color: transparent;
+    border: none;
+    color: rgb(107, 107, 109);
+    cursor: pointer;
+  }
+  
+  .section-content {
+    margin-bottom: 10px;
+  }
+  
+  .section-content input {
+    width: 200px;
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  .section-content p {
+    margin-left: 10px;
+  }
+  
+  .section-content img {
+    height: 150px;
+    width: 150px;
+    border: 1px solid rgb(2, 2, 39);
+  }
+  .seed-section{
+    padding: 20px;
+    background-color: antiquewhite;
+    width: 350px;
+  }
