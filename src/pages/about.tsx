@@ -6,7 +6,7 @@ const AboutPage: FC = () => {
     <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
   <div className="home">
     <div className="centered-container">
-      <img src="https://media.licdn.com/dms/image/D5603AQGwjVWpTk_u-Q/profile-displayphoto-shrink_800_800/0/1676829458370?e=1689811200&v=beta&t=HuxVWWR2-rjsjX3XmEZx5Rou1hACRKUzPQ2xpyNWTgA" alt="Profile" className="profile-image" />
+      <img src="https://scontent.fdac11-1.fna.fbcdn.net/v/t39.30808-6/336923457_221091087242211_1107605500335323964_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEm1uY3TouyFVXLQKSmq24Gw2GlIo4JY5DDYaUijgljkLO0cfA2KXdamqy4Fb-3OPNVP2v_H8uXYYuqLZ5MiGrr&_nc_ohc=BRRd8wCp__YAX82PfIv&_nc_ht=scontent.fdac11-1.fna&oh=00_AfBkTpDoZV3TcEb3EKf_bMvGBUENry4D2qLB8EmvLK9i_w&oe=649460F0" alt="Profile" className="profile-image" />
     </div>
     <h1>As a software engineer at Vivasoft Limited, my passion lies in learning new technologies. 
     I possess experience in completing projects from scratch to live deployment, collaborating with teams, 
