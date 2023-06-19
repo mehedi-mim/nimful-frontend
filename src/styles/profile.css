@@ -4,7 +4,7 @@
     align-items: flex-start;
     margin-top: 30px;
     padding: 20px;
-    margin-left: 300px; /* Adjust the margin as per your sidebar width */
+    margin-left: 5px; /* Adjust the margin as per your sidebar width */
   }
   
   .section-header {
@@ -15,36 +15,36 @@
     margin-left: 10px;
 
 
-  }
-  
-  .edit-button {
-    background-color: transparent;
-    border: none;
-    color: rgb(107, 107, 109);
-    cursor: pointer;
-  }
-  
+  }  
   .section-content {
     margin-bottom: 10px;
   }
   
-  .section-content input {
-    width: 200px;
-    padding: 5px;
-    margin-left: 10px;
-  }
-  
   .section-content p {
     margin-left: 10px;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
   }
   
   .section-content img {
-    height: 150px;
-    width: 150px;
-    border: 1px solid rgb(2, 2, 39);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
   }
-  .seed-section{
-    padding: 20px;
-    background-color: antiquewhite;
-    width: 350px;
+  
+  .seed {
+    display: flex;
+    align-items: center;
+  }
+  .seed p{
+    font-size: 30px;
+    margin-left: 10px;
+    color: rgb(255, 115, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .seed a{
+    margin-left: 10px;
+    color: rgb(73, 102, 27);
+    font-size: 10px;
   }

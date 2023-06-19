@@ -68,11 +68,11 @@
   
   .contact-form img {
     position: absolute;
-    top: 150px;
+    top: 130px;
     left: 50%;
     transform: translateX(-50%);
     border: 2px solid #cee409;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
 }
