@@ -8,20 +8,25 @@ const LeftSideBar = () => {
       <ul className="sidebar-subsections">
         <li><a href="/webcloud">webcloud</a></li>
       </ul>
-      <div className="sidebar-header">Blogs</div>
+      {/* <div className="sidebar-header">Blogs</div>
       <ul className="sidebar-subsections">
-        <li>Quickstart</li>
-        <li>Frontend</li>
-        <li>Backend</li>
-        <li>Database</li>
-        <li>AWS</li>
-      </ul>
-      <div className="sidebar-header">Talks</div>
+        <li>quickstart</li>
+        <li>frontend</li>
+        <li>backend</li>
+        <li>database</li>
+        <li>aws</li>
+      </ul> */}
+      {/* <div className="sidebar-header">Talks</div>
       <ul className="sidebar-subsections">
-        <li>Bard</li>
+        <li>chat</li>
         <li>...</li>
-      </ul>
+      </ul> */}
 
+      <div className="sidebar-header">About</div>
+      <ul className="sidebar-subsections">
+        <li>who am I?</li>
+        <li><a href="/contact">contact me</a></li>
+      </ul>
     </div>
   );
 };

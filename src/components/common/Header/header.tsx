@@ -27,17 +27,8 @@ const Header: FC<HeaderProps> = () => {
 
         <h1 className="logo"><a href="/">Nimful 🌿</a></h1>
         <ul className="nav-links">
-        <li>
-            <a href="/webcloud">☁️</a>
-          </li>
-          <li>|</li>
-        
           <li>
             <a href="/">Home</a>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="/about">About me</a>
           </li>
           {isLoggedIn ? (
             <>
