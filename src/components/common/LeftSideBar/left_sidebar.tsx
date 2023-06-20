@@ -7,7 +7,7 @@ const LeftSideBar = () => {
       <div className="sidebar-header">Webcloud</div>
       <ul className="sidebar-subsections">
         <li><a href="/webcloud">Webcloud</a></li>
-        <li><a href="/webcloud">How to connect?</a></li>
+        <li><a href="/how-to-connect">How to connect?</a></li>
       </ul>
       {/* <div className="sidebar-header">Blogs</div>
       <ul className="sidebar-subsections">

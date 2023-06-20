@@ -1,0 +1,80 @@
+.webcloud-tutorial-container {
+    margin-top: 40px;
+    padding: 20px;
+    margin-left: 330px;
+  }
+  
+  .section {
+    margin-bottom: 10px;
+  }
+
+    
+  .section h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    
+  }
+  
+  .section p {
+    margin-bottom: 10px;
+
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .section li {
+    cursor: pointer;
+    margin-bottom: 5px;
+    color: rgb(48, 79, 167);
+    font-family: 'Courier New', Courier, monospace;
+  }
+    
+  .code-example {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  pre {
+    font-family: monospace;
+    margin: 0;
+    display: none;
+  }
+  
+  pre.active {
+    display: block;
+  }
+  
+  code {
+    display: block;
+  }
+  
+  img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .conclusion {
+    margin-top: 40px;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+  
+  .clickable-content {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .clickable-content.active {
+    display: block;
+  }
+  
+  .Chield-one{
+    margin-left: 20px;
+  }

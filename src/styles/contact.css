@@ -67,12 +67,44 @@
   
   
   .contact-form img {
-    position: absolute;
-    top: 130px;
+    position: sticky;
+    top: -10px; /* Adjust the top value as needed */
     left: 50%;
     transform: translateX(-50%);
     border: 2px solid #cee409;
-    border-radius: 50%;
+    border-radius: 80%;
     width: 140px;
     height: 140px;
+    margin-bottom: 20px;
+  }
+  .image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 140px;
+  height: 140px;
+  border: 2px solid #cee409;
+  border-radius: 50%;
+}
+
+.cloud {
+  position: absolute;
+  top: -60px;
+  right: -80px;
+  width: 160px;
+  height: 80px;
+  background-color: #cee409;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
 }
