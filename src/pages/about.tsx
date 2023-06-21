@@ -6,12 +6,23 @@ const AboutPage: FC = () => {
     <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
   <div className="home">
     <div className="centered-container">
-      <img src="https://scontent.fdac11-1.fna.fbcdn.net/v/t39.30808-6/336923457_221091087242211_1107605500335323964_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEm1uY3TouyFVXLQKSmq24Gw2GlIo4JY5DDYaUijgljkLO0cfA2KXdamqy4Fb-3OPNVP2v_H8uXYYuqLZ5MiGrr&_nc_ohc=BRRd8wCp__YAX82PfIv&_nc_ht=scontent.fdac11-1.fna&oh=00_AfBkTpDoZV3TcEb3EKf_bMvGBUENry4D2qLB8EmvLK9i_w&oe=649460F0" alt="Profile" className="profile-image" />
+      <img src="/images/about/about.png" alt="Profile" className="profile-image" />
     </div>
-    <h1>As a software engineer at Vivasoft Limited, my passion lies in learning new technologies. 
-    I possess experience in completing projects from scratch to live deployment, collaborating with teams, 
-    and working across multiple domains. Thanks to my self-assurance, 
-    I adapt quickly to new technologies and excel in communication and teamwork.Want to know more about me? <a className='go' href='http://52.66.247.18:8080/portfolio'>click</a></h1>
+    <div className="centered-container">
+    <h2>Nimful is a self-productivity website designed to enhance users' efficiency and focus.
+         The main functionality of Nimful revolves around interacting with browser extensions.
+         One of its key features is the ability to capture user activity whenever they switch tabs.
+         Nimful provides a comprehensive tutorial section, offering insights into the website's backend and frontend workings.
+         Users can learn about the technical aspects of Nimful, gaining knowledge in various areas.
+         The tutorial section serves as a valuable resource for those interested in understanding the inner workings of the website.
+
+         Nimful focuses on improving productivity by helping users stay organized and manage their time effectively.
+         Through its extension integration, Nimful offers seamless synchronization and data tracking across different tabs.
+         The website encourages users to adopt efficient work habits by providing tools and insights to optimize their workflow.
+         Nimful's user-friendly interface and informative tutorials make it a valuable resource for individuals striving to boost their productivity.
+      </h2>
+    </div>
+
   </div>
 </Wrapper>
   );

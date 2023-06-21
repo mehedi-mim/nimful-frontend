@@ -2,25 +2,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Add this line to vertically center the content */
-  height: calc(100vh - (45px + 10px + 50px)); /* Adjust the values to account for the header, footer, and sidebar heights */
-  margin: 45px 240px 50px 310px; /* Adjust the margin values to account for the sidebar width */
+  justify-content: center;
+  height: calc(100vh - (45px + 10px + 50px));
+  margin: 45px 240px 50px 310px;
 }
 
-  
-  .centered-container {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .profile-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .go {
-    color: rgb(153, 161, 31);
-  }
+.centered-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.home pre {
+  text-align: left;
+  white-space: pre-wrap;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}

@@ -25,7 +25,8 @@ const LeftSideBar = () => {
 
       <div className="sidebar-header">About</div>
       <ul className="sidebar-subsections">
-        <li><a href="/about">Who am I?</a></li>
+        <li><a href="/about">Nimful</a></li>
+        <li><a href="/portfolio">Who am I?</a></li>
         <li><a href="/contact">Contact me</a></li>
       </ul>
     </div>
