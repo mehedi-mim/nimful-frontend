@@ -1,40 +1,150 @@
-.portfolio-center{
-    margin: 20px;
+.portfolio-center {
+    margin: 70px;
     border: 2px solid blue;
 }
 
-.portfolio-center section{
+.portfolio-center section {
     margin-bottom: 30px;
 }
 
-.portfolio-top{
-  border: 2px solid salmon;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.portfolio-top {
+    border: 2px solid salmon;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 900px;
 }
 
-.portfolio-top-left{
-    border: 2px solid saddlebrown;
-    height: 400px;
+.portfolio-top-left {
     width: 450px;
-}
-.portfolio-top-middle{
-    border: 2px solid rgb(63, 36, 112);
     height: 400px;
-    width: 450px;
+    background-color: #cee409;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-60deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.portfolio-top-right{
-    border: 2px solid rgb(19, 139, 35);
-    height: 400px;
-    width: 450px;
+.portfolio-top-middle {
+    width: 650px;
+    height: 500px;
+    background-color: #09dde4;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-60deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.portfolio-objective{
+
+.portfolio-top-right {
+    width: 450px;
+    height: 400px;
+    background-color: #e43c09;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-60deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-objective {
+    margin-top: 100px;
     border: 2px solid blueviolet;
-    height: 250px;
+    height: 100px;
 }
-.portfolio-skills{
+
+.portfolio-experiences {
+    border: 2px solid brown;
+    height: 1200px;
+    padding: 20px;
+}
+
+.experience-grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Creates 6 equal columns */
+    grid-gap: 10px;
+    /* Adjust the gap between grid items */
+}
+
+.experience-grid-item {
+    background-color: #f0f0f0;
+    /* Set the background color of grid items */
+    padding: 10px;
+    border: 2px solid lightblue;
+    height: 550px;
+    /* Adjust the padding of grid items */
+
+}
+
+.portfolio-skills {
     border: 2px solid rgb(43, 107, 226);
-    height: 250px;
+    height: 400px;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* Creates 6 equal columns */
+    grid-gap: 10px;
+    /* Adjust the gap between grid items */
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    /* Set the background color of grid items */
+    padding: 10px;
+    border: 2px solid lightblue;
+    height: 100px;
+    width: 120px;
+    /* Adjust the padding of grid items */
+}
+
+.portfolio-projects {
+    border: 2px solid rgb(43, 107, 226);
+    height: 1300px;
+    padding: 20px;
+}
+
+.projects-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Creates 6 equal columns */
+    grid-gap: 10px;
+    /* Adjust the gap between grid items */
+}
+
+.projects-grid-item {
+    background-color: #f0f0f0;
+    /* Set the background color of grid items */
+    padding: 10px;
+    border: 2px solid lightblue;
+    height: 400px;
+    width: 650px;
+    /* Adjust the padding of grid items */
+}
+
+.portfolio-awards {
+    border: 2px solid rgb(43, 107, 226);
+    height: 800px;
+    padding: 20px;
+}
+
+.awards-grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Creates 6 equal columns */
+    grid-gap: 10px;
+    /* Adjust the gap between grid items */
+}
+
+.awards-grid-item {
+    background-color: #f0f0f0;
+    /* Set the background color of grid items */
+    padding: 10px;
+    border: 2px solid lightblue;
+    height: 100px;
+    /* Adjust the padding of grid items */
 }
