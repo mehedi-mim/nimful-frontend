@@ -1,0 +1,8 @@
+.portfolio-center{
+    margin: 10px;
+    border: 2px solid blue;
+}
+
+.portfolio-center section{
+    margin-bottom: 20px;
+}

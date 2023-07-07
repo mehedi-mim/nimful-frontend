@@ -18,6 +18,8 @@
 @import './profile.css';
 @import './how-to-connect.css';
 @import './portfolio.css';
+@import './center-wrapper.css';
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

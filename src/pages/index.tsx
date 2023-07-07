@@ -2,16 +2,16 @@ import Wrapper from '@/components/common/Wrapper';
 import React, { FC, useEffect, useState } from 'react';
 const Home: FC = () => {
   const [data, setData] = useState<any>()
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => {
-        setData(json)
-        console.log(json)
-      }
+  // useEffect(() => {
+  //   fetch('https://jsonplaceholder.typicode.com/todos/1')
+  //     .then(response => response.json())
+  //     .then(json => {
+  //       setData(json)
+  //       console.log(json)
+  //     }
 
-      )
-  }, [])
+  //     )
+  // }, [])
   return (
     <>
       <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
