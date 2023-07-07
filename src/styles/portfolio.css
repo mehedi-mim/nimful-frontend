@@ -1,8 +1,40 @@
 .portfolio-center{
-    margin: 10px;
+    margin: 20px;
     border: 2px solid blue;
 }
 
 .portfolio-center section{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.portfolio-top{
+  border: 2px solid salmon;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-top-left{
+    border: 2px solid saddlebrown;
+    height: 400px;
+    width: 450px;
+}
+.portfolio-top-middle{
+    border: 2px solid rgb(63, 36, 112);
+    height: 400px;
+    width: 450px;
+}
+
+.portfolio-top-right{
+    border: 2px solid rgb(19, 139, 35);
+    height: 400px;
+    width: 450px;
+}
+.portfolio-objective{
+    border: 2px solid blueviolet;
+    height: 250px;
+}
+.portfolio-skills{
+    border: 2px solid rgb(43, 107, 226);
+    height: 250px;
 }
