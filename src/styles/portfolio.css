@@ -112,20 +112,18 @@
 .portfolio-objective h1 {
     font-size: 12px;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 10px;
     padding: 80px;
 }
 
 .portfolio-objective p {
     font-size: 24px;
-    font-style: oblique;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Times New Roman';
 }
 
 .portfolio-experiences {
-    border: 2px solid brown;
-    height: 1200px;
+    height: 1700px;
     padding: 20px;
 }
 
@@ -138,10 +136,8 @@
 }
 
 .experience-grid-item {
-    background-color: #f0f0f0;
     padding: 10px;
-    border: 2px solid lightblue;
-    height: 550px;
+    height: 800px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -152,55 +148,94 @@
 .experience-grid-item>div {
     flex: 1;
     text-align: center;
+    margin-right: 10px;
 }
 
 .exp-company {
     height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     max-width: 300px;
-    border: 2px solid red;
+    max-height: 400px;
+    background-color: #e4eee3;
+    border-radius: 50% 10% 60% 10% / 10% 10% 10% 10%;
+}
+
+.exp-company img{
+    border-radius: 50%;
+}
+.exp-company h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Times New Roman';
 }
 
 .exp-position {
     height: inherit;
-    max-width: 300px;
-    border: 2px solid #acd7d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    max-width: 330px;
+    max-height: 300px;
+    background-color: #f0ebe7;
+    border-radius: 10% 50% 10% 60% / 10% 10% 10% 10%;
+}
+
+.exp-position h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Times New Roman';
+}
+
+.exp-position p{
+    font-size: 18px;
+    font-style: italic;
 }
 
 .exp-describe {
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    font-family:'Times New Roman';
     color: #333;
     height: inherit;
-    border: 2px solid rgb(27, 163, 34);
+    background-color: #eff7ee;
+    border-radius: 10% 50% 10% 60% / 10% 10% 10% 10%;
+    box-shadow: 0 2px 4px rgba(173, 16, 16, 0.1);
+    padding: 30px;
 }
 
 .exp-describe ul {
-    list-style-type: disc;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .exp-describe li {
     margin-bottom: 10px;
+    font-size: 24px;
 }
 
 .exp-skills {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: #333;
     height: inherit;
-    max-width: 200px;
-    border: 2px solid rgb(27, 163, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    max-width: 300px;
+    max-height: 200px;
+    background-color: #ece9e6;
+    border-radius: 10% 50% 10% 60% / 10% 10% 10% 10%;
 
 }
 
 .exp-skills p {
     margin: 10px 0;
+    font-size: 20px;
 }
 
 .portfolio-skills {
-    /* border: 2px solid rgb(43, 107, 226); */
     height: 400px;
-    padding: 20px;
+    padding: 30px;
+
 }
 
 .grid-container {
@@ -212,12 +247,12 @@
 .grid-item {
     background-color: #f0f0f0;
     padding: 10px;
-    /* border: 2px solid lightblue; */
     height: 100px;
     width: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10% 60% 10% 60% / 90% 70% 50% 80%;
 }
 
 .grid-item img {

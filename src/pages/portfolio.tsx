@@ -50,7 +50,7 @@ const AboutPage: FC = () => {
               <img src="/images/portfolio/C_C_featuredimage.png" alt="Logo 2" />
             </div>
             <div className="grid-item">
-              <img src="/images/portfolio/dart.svg" alt="Logo 3" />
+              <img src="/images/portfolio/dart.png" alt="Logo 3" />
             </div>
             <div className="grid-item">
               <img src="/images/portfolio/fargate.png" alt="Logo 4" />
@@ -59,7 +59,7 @@ const AboutPage: FC = () => {
               <img src="/images/portfolio/fastapi.png" alt="Logo 5" />
             </div>
             <div className="grid-item">
-              <img src="/images/portfolio/flutter.svg" alt="Logo 6" />
+              <img src="/images/portfolio/flutter.jpeg" alt="Logo 6" />
             </div>
 
             <div className="grid-item">
@@ -82,7 +82,7 @@ const AboutPage: FC = () => {
             </div>
 
             <div className="grid-item">
-              <img src="/images/portfolio/python-log.png" alt="Logo 1" />
+              <img src="/images/portfolio/python.jpeg" alt="Logo 1" />
             </div>
             <div className="grid-item">
               <img src="/images/portfolio/rabbitmq.png" alt="Logo 2" />
@@ -107,66 +107,54 @@ const AboutPage: FC = () => {
           <div className='experience-grid-container'>
             <div className="experience-grid-item">
               <div className='exp-company'>
-                <div>Icon</div>
-                <div>Vivasoft Limited</div>
+                <img src="/images/portfolio/experience/vivasoftltd.jpeg" alt="Logo 6"></img>
+                <h1>Vivasoft Limited</h1>
               </div>
               <div className='exp-position'>
-                <div>Software Engineer L-II</div>
-                <div>From Augest-2021 to Present</div>
+                <h1>Software Engineer L-II</h1>
+                <p>From Augest-2021 to Present</p>
               </div>
               <div className="exp-describe">
                 <ul>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                  <li>Developed a web‐based product with user management, scraping products from URLS, server‐side notifications,
+                    and the ability to capture live data (video, comments, likes, followers) from live‐streaming platforms.</li>
+                  <li>Implemented multiple web application features such as invoices, payment system, certificate generation per donation,
+                    and report generation from customer surveys via Questionnaire.</li>
+                  <li>Designed and implemented a live chatting system where customers can directly communicate with internal users.</li>
+                  <li>Dockerized multiple project’s backends and database services which helped to deploy rapidly and gave better portability.</li>
                 </ul>
               </div>
               <div className='exp-skills'>
-                <p>C++</p>
-                <p>A,D,C,C++,DDD</p>
-                <p>Python</p>
+                <p>Python(FastAPI, Django)</p>
+                <p>MySQL,PostgreSQL,Docker</p>
+                <p>GraphQL</p>
               </div>
             </div>
             <div className="experience-grid-item">
               <div className='exp-company'>
-                <div>Icon</div>
-                <div>Vivasoft Limited</div>
+                <img src="/images/portfolio/experience/inovace.jpeg" alt="Logo 6"></img>
+                <h1>Inovace Technologies</h1>
               </div>
               <div className='exp-position'>
-                <div>Software Engineer L-II</div>
-                <div>From Augest-2021 to Present</div>
+                <h1>Mobile Application Developer</h1>
+                <p>From January-2021 to July-2021</p>
               </div>
               <div className="exp-describe">
                 <ul>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
-                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                  <li> Implemented features of a mobile application such as the ability for users to upload images
+                    via camera and gallery from various types of mobile devices with editing options, and image size was reduced to ensure image quality.</li>
+                    <li>Fixed bugs in that mobile application for leave policy, different UI interfaces, scrolling view, and downloading pdf/image files.</li>
+                    <li>Reduced time and memory complexity performance of a feature mobile punch by 10% where geo‐location attendance for employees 
+                      was taken from the application in real‐time whereabouts, replacing some heavy recursive code functionality.</li>
                 </ul>
               </div>
               <div className='exp-skills'>
-                <p>C++</p>
-                <p>A,D,C,C++,DDD</p>
-                <p>Python</p>
+                <p>Dart(Flutter)</p>
+                <p>REST API, Firebase, SQLite</p>
               </div>
             </div>
           </div>
-          
+
         </section>
 
         <section className='portfolio-projects'>
