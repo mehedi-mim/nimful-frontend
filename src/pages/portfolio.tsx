@@ -124,11 +124,11 @@ const AboutPage: FC = () => {
                   <li>Dockerized multiple project’s backends and database services which helped to deploy rapidly and gave better portability.</li>
                 </ul>
               </div>
-              <div className='exp-skills'>
+              {/* <div className='exp-skills'>
                 <p>Python(FastAPI, Django)</p>
                 <p>MySQL,PostgreSQL,Docker</p>
                 <p>GraphQL</p>
-              </div>
+              </div> */}
             </div>
             <div className="experience-grid-item">
               <div className='exp-company'>
@@ -148,10 +148,10 @@ const AboutPage: FC = () => {
                       was taken from the application in real‐time whereabouts, replacing some heavy recursive code functionality.</li>
                 </ul>
               </div>
-              <div className='exp-skills'>
+              {/* <div className='exp-skills'>
                 <p>Dart(Flutter)</p>
                 <p>REST API, Firebase, SQLite</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
