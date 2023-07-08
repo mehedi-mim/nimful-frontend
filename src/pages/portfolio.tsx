@@ -8,26 +8,35 @@ const AboutPage: FC = () => {
       <div className="portfolio-center">
         <section className='portfolio-top'>
           <div className='portfolio-top-left'>
-            <h1>Hi.....</h1>
+            <ul>
+              <li>Python Developer</li>
+              <li>Problem Solver</li>
+              <li>Self Learner</li>
+              <li>Linguistic</li>
+            </ul>
           </div>
           <div className='portfolio-top-middle'>
-            <h1>Hi.....</h1>
+            <img src="/images/portfolio/myself.jpg" alt="Profile" />
           </div>
           <div className='portfolio-top-right'>
-            <h1>Hi.....</h1>
+            <ul>
+              <li>2.5+ years experience</li>
+              <li>Pythonista</li>
+              <li>Codeforces Specialist</li>
+              <li>Leetcode 1668</li>
+            </ul>
           </div>
         </section>
 
-        <section className='portfolio-objective'>
-          <h1>As a software engineer at Vivasoft Limited, my passion lies in learning new technologies.
-            I possess experience in completing projects from scratch to live deployment, collaborating with teams,
-            and working across multiple domains. Thanks to my self-assurance,
-            I adapt quickly to new technologies and excel in communication and teamwork.Want to know more about me? <a className='go' href='http://52.66.247.18:8080/portfolio'>click</a>
-            As a software engineer at Vivasoft Limited, my passion lies in learning new technologies.
-            I possess experience in completing projects from scratch to live deployment, collaborating with teams,
-            and working across multiple domains. Thanks to my self-assurance,
-            I adapt quickly to new technologies and excel in communication and teamwork.Want to know more about me? <a className='go' href='http://52.66.247.18:8080/portfolio'>click</a></h1>
-
+        <section className="portfolio-objective">
+          <h1>
+            <p>
+              Hi..! I am Mehedi Hasan Mim, a Software Engineer at Vivasoft Limited. For the past 2.5 years, I have been developing websites.
+               Previously, I worked on mobile applications, and now I specialize in backend software engineering using Python. 
+               As I primarily work on client projects, I am responsible for tasks such as requirement analysis, system design, new release features, and deployment.              I have experience working in various domains, which has allowed me to develop a diverse skill set. 
+              I am adept at identifying potential issues and finding optimal solutions to ensure smooth project delivery.
+            </p>
+          </h1>
         </section>
 
         <section className='portfolio-skills'>
@@ -72,7 +81,7 @@ const AboutPage: FC = () => {
           </div>
 
         </section>
-        
+
         <section className='portfolio-awards'>
           <div className='awards-grid-container'>
             <div className='awards-grid-item'>Experience 1</div>

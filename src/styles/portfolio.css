@@ -1,5 +1,5 @@
 .portfolio-center {
-    margin: 70px;
+    margin: 40px;
     border: 2px solid blue;
 }
 
@@ -12,46 +12,115 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 900px;
+    height: 600px;
+    margin: 20px;
 }
 
 .portfolio-top-left {
-    width: 450px;
-    height: 400px;
-    background-color: #cee409;
-    border-radius: 50% 50% 50% 0;
-    transform: rotate(-60deg);
+    width: 350px;
+    height: 300px;
+    background-color: #acd7d8;
+    border-radius: 50% 60% 60% 120% / 90% 70% 150% 80%;
+    /* Adjusted border-radius values */
+    transform: rotate(0deg);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.portfolio-top-left ul {
+    list-style-type: disc;
+    /* Use 'disc' for filled bullet points */
+    padding-left: 20px;
+    /* Adjust the indentation as desired */
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.portfolio-top-left li {
+    margin-bottom: 10px;
+    /* Adjust the spacing between list items as desired */
+}
+
+
+
 .portfolio-top-middle {
-    width: 650px;
-    height: 500px;
+    width: 600px;
+    height: 550px;
+    /* Increased height to accommodate the shape */
     background-color: #09dde4;
-    border-radius: 50% 50% 50% 0;
-    transform: rotate(-60deg);
+    border-radius: 50% 60% 60% 60% / 90% 70% 50% 80%;
+    /* Adjusted border-radius values */
+    transform: rotate(0deg);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.portfolio-top-middle img {
+    max-width: 80%;
+    /* Adjust the size of the image as per your needs */
+    max-height: 80%;
+    /* Adjust the size of the image as per your needs */
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .portfolio-top-right {
     width: 450px;
     height: 400px;
-    background-color: #e43c09;
-    border-radius: 50% 50% 50% 0;
-    transform: rotate(-60deg);
+    background-color: #e46109;
+    border-radius: 50% 60% 60% 60% / 90% 70% 50% 80%;
+    /* Adjusted border-radius values */
+    transform: rotate(0deg);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.portfolio-top-right ul {
+    list-style-type: disc;
+    /* Use 'disc' for filled bullet points */
+    padding-left: 20px;
+    /* Adjust the indentation as desired */
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.portfolio-top-right li {
+    margin-bottom: 10px;
+    /* Adjust the spacing between list items as desired */
+}
+
 .portfolio-objective {
-    margin-top: 100px;
-    border: 2px solid blueviolet;
-    height: 100px;
+    margin-top: 30px;
+    border-radius: 30% 50% 70% 50% / 50% 10% 50% 40%;
+    /* Updated border radius for a rhombus shape */
+    height: 300px;
+    padding: 20px;
+    background-color: #f3f8bf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    color: #333;
+}
+
+.portfolio-objective h1 {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 80px;
+}
+
+.portfolio-objective p{
+    font-size: 24px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .portfolio-experiences {
