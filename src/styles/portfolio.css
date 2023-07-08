@@ -117,7 +117,7 @@
     padding: 80px;
 }
 
-.portfolio-objective p{
+.portfolio-objective p {
     font-size: 24px;
     font-style: oblique;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -139,12 +139,62 @@
 
 .experience-grid-item {
     background-color: #f0f0f0;
-    /* Set the background color of grid items */
     padding: 10px;
     border: 2px solid lightblue;
     height: 550px;
-    /* Adjust the padding of grid items */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
+}
+
+.experience-grid-item>div {
+    flex: 1;
+    text-align: center;
+}
+
+.exp-company {
+    height: inherit;
+    max-width: 300px;
+    border: 2px solid red;
+}
+
+.exp-position {
+    height: inherit;
+    max-width: 300px;
+    border: 2px solid #acd7d8;
+}
+
+.exp-describe {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: inherit;
+    border: 2px solid rgb(27, 163, 34);
+}
+
+.exp-describe ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.exp-describe li {
+    margin-bottom: 10px;
+}
+
+.exp-skills {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: inherit;
+    max-width: 200px;
+    border: 2px solid rgb(27, 163, 34);
+
+}
+
+.exp-skills p {
+    margin: 10px 0;
 }
 
 .portfolio-skills {
