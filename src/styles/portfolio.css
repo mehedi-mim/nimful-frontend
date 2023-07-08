@@ -1,6 +1,6 @@
 .portfolio-center {
     margin: 40px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .portfolio-center section {
@@ -8,7 +8,7 @@
 }
 
 .portfolio-top {
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -148,7 +148,7 @@
 }
 
 .portfolio-skills {
-    border: 2px solid rgb(43, 107, 226);
+    /* border: 2px solid rgb(43, 107, 226); */
     height: 400px;
     padding: 20px;
 }
@@ -156,19 +156,23 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    /* Creates 6 equal columns */
-    grid-gap: 10px;
-    /* Adjust the gap between grid items */
+    grid-gap: 5px;
 }
 
 .grid-item {
     background-color: #f0f0f0;
-    /* Set the background color of grid items */
     padding: 10px;
-    border: 2px solid lightblue;
+    /* border: 2px solid lightblue; */
     height: 100px;
     width: 120px;
-    /* Adjust the padding of grid items */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item img {
+    max-height: 80px;
+    max-width: 100px;
 }
 
 .portfolio-projects {

@@ -32,36 +32,76 @@ const AboutPage: FC = () => {
           <h1>
             <p>
               Hi..! I am Mehedi Hasan Mim, a Software Engineer at Vivasoft Limited. For the past 2.5 years, I have been developing websites.
-               Previously, I worked on mobile applications, and now I specialize in backend software engineering using Python. 
-               As I primarily work on client projects, I am responsible for tasks such as requirement analysis, system design, new release features, and deployment.              I have experience working in various domains, which has allowed me to develop a diverse skill set. 
+              Previously, I worked on mobile applications, and now I specialize in backend software engineering using Python.
+              As I primarily work on client projects, I am responsible for tasks such as requirement analysis, system design, new release features, and deployment.              I have experience working in various domains, which has allowed me to develop a diverse skill set.
               I am adept at identifying potential issues and finding optimal solutions to ensure smooth project delivery.
             </p>
           </h1>
         </section>
 
-        <section className='portfolio-skills'>
-          <div className='grid-container'>
-            <div className='grid-item'>Item 1</div>
-            <div className='grid-item'>Item 2</div>
-            <div className='grid-item'>Item 3</div>
-            <div className='grid-item'>Item 4</div>
-            <div className='grid-item'>Item 5</div>
-            <div className='grid-item'>Item 6</div>
-            <div className='grid-item'>Item 1</div>
-            <div className='grid-item'>Item 2</div>
-            <div className='grid-item'>Item 3</div>
-            <div className='grid-item'>Item 4</div>
-            <div className='grid-item'>Item 5</div>
-            <div className='grid-item'>Item 6</div>
-            <div className='grid-item'>Item 1</div>
-            <div className='grid-item'>Item 2</div>
-            <div className='grid-item'>Item 3</div>
-            <div className='grid-item'>Item 4</div>
-            <div className='grid-item'>Item 5</div>
-            <div className='grid-item'>Item 6</div>
-            {/* Add more grid items as needed */}
+
+        <section className="portfolio-skills">
+          <div className="grid-container">
+
+            <div className="grid-item">
+              <img src="/images/portfolio/aws.png" alt="Logo 1" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/C_C_featuredimage.png" alt="Logo 2" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/dart.svg" alt="Logo 3" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/fargate.png" alt="Logo 4" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/fastapi.png" alt="Logo 5" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/flutter.svg" alt="Logo 6" />
+            </div>
+
+            <div className="grid-item">
+              <img src="/images/portfolio/java.png" alt="Logo 1" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/js.png" alt="Logo 2" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/kong.png" alt="Logo 3" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/minikube.png" alt="Logo 4" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/mysql.png" alt="Logo 5" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/postgres.png" alt="Logo 6" />
+            </div>
+
+            <div className="grid-item">
+              <img src="/images/portfolio/python-log.png" alt="Logo 1" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/rabbitmq.png" alt="Logo 2" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/react.jpeg" alt="Logo 3" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/redis.png" alt="Logo 4" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/strawberry.jpeg" alt="Logo 5" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/typescript.png" alt="Logo 6" />
+            </div>
           </div>
         </section>
+
 
         <section className='portfolio-experiences'>
           <div className='experience-grid-container'>
