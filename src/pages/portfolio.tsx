@@ -135,9 +135,38 @@ const AboutPage: FC = () => {
                 <p>Python</p>
               </div>
             </div>
-            <div className='experience-grid-item'>Experience 2</div>
+            <div className="experience-grid-item">
+              <div className='exp-company'>
+                <div>Icon</div>
+                <div>Vivasoft Limited</div>
+              </div>
+              <div className='exp-position'>
+                <div>Software Engineer L-II</div>
+                <div>From Augest-2021 to Present</div>
+              </div>
+              <div className="exp-describe">
+                <ul>
+                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                  <li>List item 1 List item 1 List item 1 List item 1</li>
+                </ul>
+              </div>
+              <div className='exp-skills'>
+                <p>C++</p>
+                <p>A,D,C,C++,DDD</p>
+                <p>Python</p>
+              </div>
+            </div>
           </div>
-
+          
         </section>
 
         <section className='portfolio-projects'>
