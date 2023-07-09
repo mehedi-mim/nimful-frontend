@@ -143,9 +143,9 @@ const AboutPage: FC = () => {
                 <ul>
                   <li> Implemented features of a mobile application such as the ability for users to upload images
                     via camera and gallery from various types of mobile devices with editing options, and image size was reduced to ensure image quality.</li>
-                    <li>Fixed bugs in that mobile application for leave policy, different UI interfaces, scrolling view, and downloading pdf/image files.</li>
-                    <li>Reduced time and memory complexity performance of a feature mobile punch by 10% where geo‐location attendance for employees 
-                      was taken from the application in real‐time whereabouts, replacing some heavy recursive code functionality.</li>
+                  <li>Fixed bugs in that mobile application for leave policy, different UI interfaces, scrolling view, and downloading pdf/image files.</li>
+                  <li>Reduced time and memory complexity performance of a feature mobile punch by 10% where geo‐location attendance for employees
+                    was taken from the application in real‐time whereabouts, replacing some heavy recursive code functionality.</li>
                 </ul>
               </div>
               {/* <div className='exp-skills'>
@@ -159,23 +159,75 @@ const AboutPage: FC = () => {
 
         <section className='portfolio-projects'>
           <div className='projects-grid-container'>
-            <div className='projects-grid-item'>Projects 1</div>
-            <div className='projects-grid-item'>Projects 2</div>
-            <div className='projects-grid-item'>Projects 3</div>
-            <div className='projects-grid-item'>Projects 4</div>
-            <div className='projects-grid-item'>Projects 5</div>
-          </div>
+            <div className='projects-grid-item'>
+              <img src="images/portfolio/projects/stickler.jpeg" alt="Stickler"></img>
+              <h1>Stickler</h1>
+              <h6>October 2021- Present</h6>
+              <h2>We believe that Live Commerce will be the ascendant ecommerce trend of the coming years.
+                Following on from 6 huge years of growth in China, where Live Commerce went from inception in 2016 to around a third of all ecommerce transactions.
+                Outside China, this will look different, more fragmented, more specialised, and even more interactive.
+                It will be one of the dominant forms of communication and sales for brands and retailers.</h2>
+              <h3>FastAPI,GraphQL,PostgresQL</h3>
+            </div>
+            <div className='projects-grid-item'>
+              <img src='images/portfolio/projects/moonraker.png'></img>
+              <h1>Toja connected water</h1>
+              <h6>January 2022 - September-2022</h6>
+              <h2>Our passion is water, because water is the planet’s most precious resource.
+                Our goal is to balance your water footprint by giving fresh and clean water back to the ecosystem so that we, and generations after us, can still enjoy water.
+                Toja connects you with water projects around the world to work together to raise water awareness,
+                combat water scarcity and provide access to fresh and clean water in remote and poor areas.
+                Your water offset makes it possible. Make your contribution to the environment and society with Toja.
+              </h2>
+              <h3>FastAPI,Firebase, RestAPI,React</h3>
+            </div>
 
-        </section>
+            <div className='projects-grid-item'>
+              <img src='images/portfolio/projects/tipsoi.webp'></img>
+              <h1>Tipsoi Mobile App</h1>
+              <h6>January 2021 - July-2022</h6>
+              <h2>Tipsoi HRM comes with a feature-rich & robust android and iOS native mobile app,
+                from where the admin can have the idea of the overall organization’s attendance at-a-glance,and execute various HR functionalities i.e.
+                approve decline leave, manual entry requests. Employees can easily perform their day-to-day activities.
+                Mobile Punch
+                Site Management
+                Apply & Approve Leave/manual entry Requests
+                Easy Activation through QR-code Scan
+                Easy Enrollment and Allocation
+              </h2>
+              <h3>Dart,Flutter</h3>
+            </div>
 
-        <section className='portfolio-awards'>
-          <div className='awards-grid-container'>
-            <div className='awards-grid-item'>Experience 1</div>
-            <div className='awards-grid-item'>Experience 2</div>
-            <div className='awards-grid-item'>Experience 3</div>
-            <div className='awards-grid-item'>Experience 4</div>
-            <div className='awards-grid-item'>Experience 5</div>
-            <div className='awards-grid-item'>Experience 6</div>
+            <div className='projects-grid-item'>
+              <img src='images/portfolio/projects/its.png'></img>
+              <h1>Internal Ticketing System</h1>
+              <h6>July 2021 - December-2022</h6>
+              <h2>Tipsoi HRM comes with a feature-rich & robust android and iOS native mobile app,
+                from where the admin can have the idea of the overall organization’s attendance at-a-glance,and execute various HR functionalities i.e.
+                approve decline leave, manual entry requests. Employees can easily perform their day-to-day activities.
+                Mobile Punch
+                Site Management
+                Apply & Approve Leave/manual entry Requests
+                Easy Activation through QR-code Scan
+                Easy Enrollment and Allocation
+              </h2>
+              <h3>Dart,Flutter</h3>
+            </div>
+            <div className='projects-grid-item'>
+              <img src='images/portfolio/projects/nimful.png'></img>
+              <h1>Nimful</h1>
+              <h6>March 2023 - Present</h6>
+              <h2>Tipsoi HRM comes with a feature-rich & robust android and iOS native mobile app,
+                from where the admin can have the idea of the overall organization’s attendance at-a-glance,and execute various HR functionalities i.e.
+                approve decline leave, manual entry requests. Employees can easily perform their day-to-day activities.
+                Mobile Punch
+                Site Management
+                Apply & Approve Leave/manual entry Requests
+                Easy Activation through QR-code Scan
+                Easy Enrollment and Allocation
+              </h2>
+              <h3>Dart,Flutter</h3>
+            </div>
           </div>
 
         </section>
