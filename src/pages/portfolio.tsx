@@ -1,8 +1,53 @@
 import CenterWrapper from '@/components/common/CenterWrapper/center_wrapper';
-import React, { FC } from 'react';
+import React, { useEffect, useState, FC } from 'react';
+// Get the target element
+
 
 const AboutPage: FC = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('appear');
+        }
+      });
+    });
+
+    const section = document.querySelector('.portfolio-objective');
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('appear');
+        }
+      });
+    });
+
+    const section = document.querySelector('.portfolio-skills');
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, []);
+
   return (
+
     <CenterWrapper>
 
       <div className="portfolio-center">
@@ -46,6 +91,7 @@ const AboutPage: FC = () => {
             <div className="grid-item">
               <img src="/images/portfolio/aws.png" alt="Logo 1" />
             </div>
+
             <div className="grid-item">
               <img src="/images/portfolio/C_C_featuredimage.png" alt="Logo 2" />
             </div>
