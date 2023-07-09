@@ -52,25 +52,28 @@ const AboutPage: FC = () => {
 
       <div className="portfolio-center">
         <section className='portfolio-top'>
-          <div className='portfolio-top-left'>
+          <div className='portfolio-top-left balloon-animation-left'>
             <ul>
               <li>Python Developer</li>
               <li>Problem Solver</li>
               <li>Self Learner</li>
               <li>Linguistic</li>
+              <li>Toph.co 1867</li>
             </ul>
           </div>
           <div className='portfolio-top-middle'>
-            <img src="/images/portfolio/myself.jpg" alt="Profile" />
+            <img src="/images/portfolio/profile.png" alt="Profile" />
           </div>
-          <div className='portfolio-top-right'>
+          <div className='portfolio-top-right balloon-animation-right'>
             <ul>
               <li>2.5+ years experience</li>
               <li>Pythonista</li>
               <li>Codeforces Specialist</li>
               <li>Leetcode 1668</li>
+              <li>Divisional Champion</li>
             </ul>
           </div>
+
         </section>
 
         <section className="portfolio-objective">
