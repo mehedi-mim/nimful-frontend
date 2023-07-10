@@ -49,8 +49,13 @@ const AboutPage: FC = () => {
   return (
 
     <CenterWrapper>
-
+      
       <div className="portfolio-center">
+        <section>
+          <div className='portfolio-lable-lala'>
+              Intro...
+          </div>
+        </section>
         <section className='portfolio-top'>
           <div className='portfolio-top-left balloon-animation-left'>
             <ul>
@@ -89,7 +94,7 @@ const AboutPage: FC = () => {
           </div>
 
         </section>
-
+        
         <section className="portfolio-objective">
           <h1>
             <p>
@@ -100,18 +105,16 @@ const AboutPage: FC = () => {
             </p>
           </h1>
         </section>
-
+        <section>
+          <div className='portfolio-lable'>
+              Skills
+          </div>
+        </section>
 
         <section className="portfolio-skills">
           <div className="grid-container">
             <div className="grid-item">
               <img src="/images/portfolio/python.jpeg" alt="Logo 1" />
-              <div className="grid-item-modal">
-                <div className="grid-item-modal-content">
-                  <h2>Python</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan tempus justo, a consectetur diam scelerisque nec.</p>
-                </div>
-              </div>
             </div>
             <div className="grid-item">
               <img src="/images/portfolio/fastapi.png" alt="Logo 5" />
@@ -176,15 +179,17 @@ const AboutPage: FC = () => {
           </div>
         </section>
 
-
+        <section>
+          <div className='portfolio-lable'>
+              Experiences
+          </div>
+        </section>
         <section className='portfolio-experiences'>
           <div className='experience-grid-container'>
             <div className="experience-grid-item">
               <div className='exp-company'>
                 <img src="/images/portfolio/experience/vivasoftltd.jpeg" alt="Logo 6"></img>
                 <h1>Vivasoft Limited</h1>
-              </div>
-              <div className='exp-position'>
                 <h1>Software Engineer L-II</h1>
                 <p>From Augest-2021 to Present</p>
               </div>
@@ -208,8 +213,6 @@ const AboutPage: FC = () => {
               <div className='exp-company'>
                 <img src="/images/portfolio/experience/inovace.jpeg" alt="Logo 6"></img>
                 <h1>Inovace Technologies</h1>
-              </div>
-              <div className='exp-position'>
                 <h1>Mobile Application Developer</h1>
                 <p>From January-2021 to July-2021</p>
               </div>
@@ -230,7 +233,11 @@ const AboutPage: FC = () => {
           </div>
 
         </section>
-
+        <section>
+          <div className='portfolio-lable'>
+              Projects
+          </div>
+        </section>
         <section className='portfolio-projects'>
           <div className='projects-grid-container'>
             <div className='projects-grid-item'>
@@ -304,6 +311,11 @@ const AboutPage: FC = () => {
             </div>
           </div>
 
+        </section>
+        <section>
+          <div className='portfolio-lable-customize'>
+             to be continued...
+          </div>
         </section>
 
       </div>

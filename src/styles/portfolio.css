@@ -1,10 +1,30 @@
+.portfolio-lable-lala{
+    font-size: 24px;
+    margin-left: 30px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+.portfolio-lable{
+  font-size: 24px;
+  margin-left: 30px;
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.portfolio-lable-customize{
+    font-size: 24px;
+    margin-left: 30px;
+    margin-top: 100px;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+  }
 .portfolio-center {
     margin: 40px;
     /* border: 2px solid blue; */
 }
 
 .portfolio-center section {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .portfolio-top {
@@ -12,8 +32,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 600px;
+    height: 500px;
     margin: 40px;
+    margin-bottom: 40px;
 }
 
 .portfolio-top-left {
@@ -33,7 +54,7 @@
 .portfolio-top-left ul {
     list-style-type: disc;
     padding-left: 20px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -43,11 +64,11 @@
 }
 
 .portfolio-top-left ul li:nth-child(1) {
-    color: red;
+    color: rgb(77, 24, 24);
 }
 
 .portfolio-top-left ul li:nth-child(2) {
-    color: blue;
+    color: rgb(35, 35, 148);
 }
 
 .portfolio-top-left ul li:nth-child(3) {
@@ -88,6 +109,7 @@
     /* border: 10px solid rgb(241, 227, 225); */
     width: 500px;
     height: 450px;
+    border: 1px solid #a5cf0e;
     background: linear-gradient(#fafaf3, #e6e0dd);
     /* border-radius: 50% 60% 10% 10% / 10% 10% 10% 10%; */
     transform: rotate(0deg);
@@ -171,7 +193,7 @@
 .portfolio-top-right ul {
     list-style-type: disc;
     padding-left: 20px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -235,7 +257,8 @@
     opacity: 0;
     transform: translateX(-100%);
     /* Adjust this value to change the starting position  */
-    transition: opacity 1.5s ease, transform 1.5s ease;
+    transition: opacity 3.5s ease, transform 1.5s ease;
+    /* border: 2px solid red; */
 
 
 }
@@ -254,12 +277,12 @@
 }
 
 .portfolio-objective p {
-    font-size: 24px;
+    font-size: 16px;
     font-family: 'Times New Roman';
 }
 
 .portfolio-experiences {
-    height: 1250px;
+    height: 900px;
     padding: 20px;
     margin: 20px;
 }
@@ -274,7 +297,7 @@
 
 .experience-grid-item {
     padding: 10px;
-    height: 600px;
+    height: 450px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -299,9 +322,8 @@
     align-items: center;
     /* Center vertically */
     max-width: 300px;
-    max-height: 400px;
     background-color: #e4eee3;
-    border-radius: 50% 10% 60% 10% / 10% 10% 10% 10%;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.5);
 }
 
 .exp-company img {
@@ -309,9 +331,13 @@
 }
 
 .exp-company h1 {
-    font-size: 30px;
+    font-size: 16px;
     font-weight: bold;
     font-family: 'Times New Roman';
+}
+.exp-company p{
+    font-family: 'Times New Roman';
+
 }
 
 .exp-position {
@@ -323,20 +349,18 @@
     align-items: center;
     /* Center vertically */
     max-width: 330px;
-    max-height: 300px;
     background-color: #f0ebe7;
-    border-radius: 10% 50% 10% 60% / 10% 10% 10% 10%;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.5);
 }
 
 .exp-position h1 {
-    font-size: 30px;
+    font-size: 16px;
     font-weight: bold;
     font-family: 'Times New Roman';
 }
 
 .exp-position p {
-    font-size: 18px;
-    font-style: italic;
+    font-size: 16px;
 }
 
 .exp-describe {
@@ -344,7 +368,7 @@
     color: #333;
     height: inherit;
     background-color: #eff7ee;
-    border-radius: 10% 50% 10% 60% / 10% 10% 10% 10%;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 4px rgba(173, 16, 16, 0.1);
     padding: 30px;
     display: flex;
@@ -361,34 +385,17 @@
 
 .exp-describe li {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 16px;
 }
 
-.exp-skills {
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
-    max-width: 300px;
-    max-height: 200px;
-    background-color: #ece9e6;
-    border-radius: 10% 50% 10% 60% / 10% 10% 10% 10%;
-
-}
-
-.exp-skills p {
-    margin: 10px;
-    font-size: 20px;
-}
 
 .portfolio-skills {
-    height: 300px;
+    height: 250px;
     padding: 30px;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.5);
     margin: 40px;
+    /* background: linear-gradient(#fafaf3, #f2f8dc); */
+
     /* opacity: 0;
     transform: translateX(100%);
     transition: opacity 1.5s ease, transform 1.5s ease; */
@@ -409,8 +416,8 @@
 .grid-item {
     background-color: #f0f0f0;
     padding: 10px;
-    height: 100px;
-    width: 120px;
+    height: 80px;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,8 +430,8 @@
 }
 
 .grid-item img {
-    max-height: 80px;
-    max-width: 100px;
+    max-height: 60px;
+    max-width: 80px;
 }
 
 .portfolio-projects {
@@ -513,17 +520,18 @@
 }
 
 .projects-grid-item h1 {
-    font-size: 30px;
+    font-size: 16px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Times New Roman';
 }
 
 .projects-grid-item h6 {
-    font-style: italic;
+    font-size: 14px;
+    color: gray;
 }
 
 .projects-grid-item h2 {
-    font-family: sans-serif;
-    margin-top: 20px;
+    font-family: 'Times New Roman';
+    margin-top: 16px;
     margin-bottom: 20px;
 }
