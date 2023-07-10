@@ -46,23 +46,6 @@ const AboutPage: FC = () => {
     };
   }, []);
 
-  const gridItems = document.querySelectorAll('.grid-item');
-
-  gridItems.forEach((item) => {
-    item.addEventListener('mouseenter', () => {
-      const overlay = item.querySelector('.grid-item-overlay') as HTMLElement;
-      if (overlay) {
-        overlay.style.display = 'flex';
-      }
-    });
-
-    item.addEventListener('mouseleave', () => {
-      const overlay = item.querySelector('.grid-item-overlay') as HTMLElement;
-      if (overlay) {
-        overlay.style.display = 'none';
-      }
-    });
-  });
   return (
 
     <CenterWrapper>
