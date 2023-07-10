@@ -46,6 +46,23 @@ const AboutPage: FC = () => {
     };
   }, []);
 
+  const gridItems = document.querySelectorAll('.grid-item');
+
+  gridItems.forEach((item) => {
+    item.addEventListener('mouseenter', () => {
+      const overlay = item.querySelector('.grid-item-overlay') as HTMLElement;
+      if (overlay) {
+        overlay.style.display = 'flex';
+      }
+    });
+
+    item.addEventListener('mouseleave', () => {
+      const overlay = item.querySelector('.grid-item-overlay') as HTMLElement;
+      if (overlay) {
+        overlay.style.display = 'none';
+      }
+    });
+  });
   return (
 
     <CenterWrapper>
@@ -54,23 +71,37 @@ const AboutPage: FC = () => {
         <section className='portfolio-top'>
           <div className='portfolio-top-left balloon-animation-left'>
             <ul>
-              <li>Python Developer</li>
-              <li>Problem Solver</li>
-              <li>Self Learner</li>
-              <li>Linguistic</li>
-              <li>Toph.co 1867</li>
+              <li>Python Developer.</li>
+              <li>Dockerized Multiple Projects.</li>
+              <li>2000+ problem solved.</li>
+              <li>4 Live Projects.</li>
+              <li>Competetive Programmer.</li>
+              <li>Team Player</li>
+
             </ul>
           </div>
           <div className='portfolio-top-middle'>
             <img src="/images/portfolio/profile.png" alt="Profile" />
+            <div className="portfolio-links">
+              <a href="https://www.facebook.com/mhm.cse"><img src="/images/portfolio/icon/facebook.jpeg" alt="Facebook" className="small-icon" /></a>
+              <a href="https://twitter.com/mHm_cse"><img src="/images/portfolio/icon/twitter.png" alt="Twitter" className="small-icon" /></a>
+              <a href="mailto:mehedi.mim.bd@gmail.com"><img src="/images/portfolio/icon/gmail.png" alt="Gmail" className="small-icon" /></a>
+              <a href="https://www.linkedin.com/in/mehedi-mim/"><img src="/images/portfolio/icon/linkedin.png" alt="LinkedIn" className="small-icon" /></a>
+              <a href="https://www.linkedin.com/in/mehedi-mim/"><img src="/images/portfolio/icon/indeed.png" alt="LinkedIn" className="small-icon" /></a>
+              <a href="https://www.linkedin.com/in/mehedi-mim/"><img src="/images/portfolio/icon/skype.png" alt="LinkedIn" className="small-icon" /></a>
+              <a href="https://www.linkedin.com/in/mehedi-mim/"><img src="/images/portfolio/icon/telegram.jpeg" alt="LinkedIn" className="small-icon" /></a>
+              <a href="https://www.linkedin.com/in/mehedi-mim/"><img src="/images/portfolio/icon/whatsapp.png" alt="LinkedIn" className="small-icon" /></a>
+
+            </div>
           </div>
           <div className='portfolio-top-right balloon-animation-right'>
             <ul>
-              <li>2.5+ years experience</li>
-              <li>Pythonista</li>
-              <li>Codeforces Specialist</li>
-              <li>Leetcode 1668</li>
-              <li>Divisional Champion</li>
+              <li>2.5+ years work-experience.</li>
+              <li>Backend+(Basic Frontend).</li>
+              <li>ICPC Participation.</li>
+              <li>Miniqube.</li>
+              <li>Divisional Champion in NCPC.</li>
+              <li>REST,GraphQL.</li>
             </ul>
           </div>
 
@@ -90,6 +121,27 @@ const AboutPage: FC = () => {
 
         <section className="portfolio-skills">
           <div className="grid-container">
+            <div className="grid-item">
+              <img src="/images/portfolio/python.jpeg" alt="Logo 1" />
+              <div className="grid-item-modal">
+                <div className="grid-item-modal-content">
+                  <h2>Python</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan tempus justo, a consectetur diam scelerisque nec.</p>
+                </div>
+              </div>
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/fastapi.png" alt="Logo 5" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/strawberry.jpeg" alt="Logo 5" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/postgres.png" alt="Logo 6" />
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/redis.png" alt="Logo 4" />
+            </div>
 
             <div className="grid-item">
               <img src="/images/portfolio/aws.png" alt="Logo 1" />
@@ -97,23 +149,22 @@ const AboutPage: FC = () => {
 
             <div className="grid-item">
               <img src="/images/portfolio/C_C_featuredimage.png" alt="Logo 2" />
+
             </div>
             <div className="grid-item">
               <img src="/images/portfolio/dart.png" alt="Logo 3" />
+
             </div>
             <div className="grid-item">
               <img src="/images/portfolio/fargate.png" alt="Logo 4" />
+
             </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/fastapi.png" alt="Logo 5" />
-            </div>
+
             <div className="grid-item">
               <img src="/images/portfolio/flutter.jpeg" alt="Logo 6" />
             </div>
 
-            <div className="grid-item">
-              <img src="/images/portfolio/java.png" alt="Logo 1" />
-            </div>
+
             <div className="grid-item">
               <img src="/images/portfolio/js.png" alt="Logo 2" />
             </div>
@@ -127,11 +178,7 @@ const AboutPage: FC = () => {
               <img src="/images/portfolio/mysql.png" alt="Logo 5" />
             </div>
             <div className="grid-item">
-              <img src="/images/portfolio/postgres.png" alt="Logo 6" />
-            </div>
-
-            <div className="grid-item">
-              <img src="/images/portfolio/python.jpeg" alt="Logo 1" />
+              <img src="/images/portfolio/java.png" alt="Logo 1" />
             </div>
             <div className="grid-item">
               <img src="/images/portfolio/rabbitmq.png" alt="Logo 2" />
@@ -139,12 +186,7 @@ const AboutPage: FC = () => {
             <div className="grid-item">
               <img src="/images/portfolio/react.jpeg" alt="Logo 3" />
             </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/redis.png" alt="Logo 4" />
-            </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/strawberry.jpeg" alt="Logo 5" />
-            </div>
+
             <div className="grid-item">
               <img src="/images/portfolio/typescript.png" alt="Logo 6" />
             </div>
