@@ -241,7 +241,7 @@
     margin-top: 50px;
     /* border-radius: 10% 50% 10% 10% / 10% 10% 10% 10%; */
     /* Updated border radius for a rhombus shape */
-    height: 300px;
+    height: 330px;
     padding: 20px;
     background-color: #f1f1e9;
     display: flex;
@@ -277,7 +277,6 @@
 .portfolio-objective p {
     font-size: 16px;
     font-family: 'Times New Roman';
-    line-height: normal;
     margin-top: 5px;
 }
 
@@ -437,7 +436,7 @@
 
 .portfolio-projects {
     /* border: 2px solid rgb(43, 107, 226); */
-    height: 1800px;
+    height: 2000px;
     padding: 20px;
     margin: 20px;
 }
@@ -452,7 +451,7 @@
     background-color: #f0f0f0;
     padding: 10px;
     /* border: 2px solid lightblue; */
-    height: 550px;
+    height: 650px;
     width: 700px;
     margin-bottom: 15px;
     display: flex;
@@ -518,6 +517,7 @@
 
 .projects-grid-item img {
     border-radius: 50%;
+    margin-top: 40px;
 }
 
 .projects-grid-item h1 {
@@ -531,8 +531,19 @@
     color: gray;
 }
 
-.projects-grid-item h2 {
+.projects-grid-item h2{
     font-family: 'Times New Roman';
     margin-top: 16px;
+    text-align: left;
+    margin-left: 40px;
+    font-size: 16px;
+    /* line-height: normal; */
+}
+
+.projects-grid-item h3{
+    font-family: 'Times New Roman';
+    margin-top: auto;
+    font-size: 14px;
     margin-bottom: 20px;
+    color: gray;
 }
