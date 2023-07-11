@@ -49,65 +49,69 @@ const AboutPage: FC = () => {
   return (
 
     <CenterWrapper>
-      
+
       <div className="portfolio-center">
         <section>
           <div className='portfolio-lable-lala'>
-              Intro...
+            Intro...
           </div>
         </section>
         <section className='portfolio-top'>
           <div className='portfolio-top-left balloon-animation-left'>
             <ul>
-              <li>Python Developer.</li>
-              <li>Dockerized Multiple Projects.</li>
-              <li>2000+ problem solved.</li>
-              <li>4 Live Projects.</li>
-              <li>Competetive Programmer.</li>
-              <li>Team Player</li>
+              <li> 💼 2.5+ years work-experience.</li>
+              <li> 💼 Backend+(Basic Frontend).</li>
+              <li> 💼 Python Developer.</li>
+              <li> 💼 4 Live Projects.</li>
+              <li> 💼 REST,GraphQL.</li>
+              <li> 💼 Dockerized multiple projects.</li>
+              <li> 💼 Languages( Bangla, English, Hindi).</li>
 
             </ul>
           </div>
           <div className='portfolio-top-middle'>
             <img src="/images/portfolio/profile.png" alt="Profile" />
             <div className="portfolio-links">
-              <a href="https://www.facebook.com/mhm.cse"><img src="/images/portfolio/icon/facebook.jpeg" alt="Facebook" className="small-icon" /></a>
-              <a href="https://twitter.com/mHm_cse"><img src="/images/portfolio/icon/twitter.png" alt="Twitter" className="small-icon" /></a>
               <a href="mailto:mehedi.mim.bd@gmail.com"><img src="/images/portfolio/icon/gmail.png" alt="Gmail" className="small-icon" /></a>
               <a href="https://www.linkedin.com/in/mehedi-mim/"><img src="/images/portfolio/icon/linkedin.png" alt="LinkedIn" className="small-icon" /></a>
-              <a href="https://www.linkedin.com/in/mehedi-mim/"><img src="/images/portfolio/icon/indeed.png" alt="LinkedIn" className="small-icon" /></a>
-              <a href="https://www.linkedin.com/in/mehedi-mim/"><img src="/images/portfolio/icon/skype.png" alt="LinkedIn" className="small-icon" /></a>
-              <a href="https://www.linkedin.com/in/mehedi-mim/"><img src="/images/portfolio/icon/telegram.jpeg" alt="LinkedIn" className="small-icon" /></a>
-              <a href="https://www.linkedin.com/in/mehedi-mim/"><img src="/images/portfolio/icon/whatsapp.png" alt="LinkedIn" className="small-icon" /></a>
+              <a href="https://twitter.com/mHm_cse"><img src="/images/portfolio/icon/twitter.png" alt="Twitter" className="small-icon" /></a>
+              <a href="https://www.facebook.com/mhm.cse"><img src="/images/portfolio/icon/facebook.jpeg" alt="Facebook" className="small-icon" /></a>
+              <a href="#live:.cid.1cb85c7912fbef7a"><img src="/images/portfolio/icon/skype.png" alt="LinkedIn" className="small-icon" /></a>
+              <a href="#+8801783045783/"><img src="/images/portfolio/icon/telegram.jpeg" alt="LinkedIn" className="small-icon" /></a>
+              <a href="#+8801783045783"><img src="/images/portfolio/icon/whatsapp.png" alt="LinkedIn" className="small-icon" /></a>
 
             </div>
           </div>
           <div className='portfolio-top-right balloon-animation-right'>
             <ul>
-              <li>2.5+ years work-experience.</li>
-              <li>Backend+(Basic Frontend).</li>
-              <li>ICPC Participation.</li>
-              <li>Miniqube.</li>
-              <li>Divisional Champion in NCPC.</li>
-              <li>REST,GraphQL.</li>
+              <li>💪 Competetive Programmer. </li>
+              <li>📝 Datastructure & Algorithms. </li>
+              <li>🏆 2000+ problems solved.  </li>
+              <li>🎓 ACM ICPC participation.  </li>
+              <li>🏆 Yellow coder at toph.co  </li>
+              <li>🤝 Team player.</li>
             </ul>
           </div>
 
         </section>
-        
+
         <section className="portfolio-objective">
           <h1>
             <p>
-              Hi..! I am Mehedi Hasan Mim, a Software Engineer at Vivasoft Limited. For the past 2.5 years, I have been developing websites.
-              Previously, I worked on mobile applications, and now I specialize in backend software engineering using Python.
-              As I primarily work on client projects, I am responsible for tasks such as requirement analysis, system design, new release features, and deployment.              I have experience working in various domains, which has allowed me to develop a diverse skill set.
-              I am adept at identifying potential issues and finding optimal solutions to ensure smooth project delivery.
+              I extend my warmest greetings as I introduce myself, Mehedi Hasan Mim, an accomplished Software Engineer currently affiliated with the distinguished organization, Vivasoft Limited. With an unwavering dedication to the pursuit of excellence, I have diligently honed my expertise in the art of website development over the course of the past 2.5 years. Prior to this, I had the privilege of immersing myself in the intricacies of mobile application development, and I have now directed my focus towards the dynamic realm of backend software engineering, specializing in the utilization of the esteemed Python programming language.
+            </p>
+            <p>
+              My journey as a pivotal member of the Vivasoft team has been defined by a deep-seated responsibility for spearheading critical tasks associated with a diverse range of client projects. As a seasoned professional, I bring forth a wealth of expertise in conducting meticulous requirement analysis, crafting intricate system designs, seamlessly integrating new release features. Leveraging my experiences across various domains, I have diligently cultivated a versatile skill set, enabling me to adroitly navigate through complex challenges and intricacies that often arise during the development lifecycle. 
+              My unwavering dedication allows me to deftly identify potential pitfalls and swiftly devise optimal solutions, ensuring the seamless and timely delivery of projects while maintaining an unwavering commitment to quality and client satisfaction.
+            </p>
+            <p>
+            With an acute understanding that every project presents its unique set of complexities, I approach each endeavor with a meticulous attention to detail, ensuring that I adapt my expertise to cater to the specific requirements and intricacies of each task. My unwavering focus on staying abreast of the latest industry trends and technological advancements empowers me to leverage cutting-edge tools and methodologies, thereby facilitating the development of highly scalable, efficient, and secure software solutions.
             </p>
           </h1>
         </section>
         <section>
           <div className='portfolio-lable'>
-              Skills
+            Skills
           </div>
         </section>
 
@@ -181,7 +185,7 @@ const AboutPage: FC = () => {
 
         <section>
           <div className='portfolio-lable'>
-              Experiences
+            Experiences
           </div>
         </section>
         <section className='portfolio-experiences'>
@@ -191,16 +195,16 @@ const AboutPage: FC = () => {
                 <img src="/images/portfolio/experience/vivasoftltd.jpeg" alt="Logo 6"></img>
                 <h1>Vivasoft Limited</h1>
                 <h1>Software Engineer L-II</h1>
-                <p>From Augest-2021 to Present</p>
+                <p>Augest-2021 to Present</p>
               </div>
               <div className="exp-describe">
                 <ul>
-                  <li>Developed a web‐based product with user management, scraping products from URLS, server‐side notifications,
+                  <li>💪  Developed a web‐based product with user management, scraping products from URLS, server‐side notifications,
                     and the ability to capture live data (video, comments, likes, followers) from live‐streaming platforms.</li>
-                  <li>Implemented multiple web application features such as invoices, payment system, certificate generation per donation,
+                  <li>💪  Implemented multiple web application features such as invoices, payment system, certificate generation per donation,
                     and report generation from customer surveys via Questionnaire.</li>
-                  <li>Designed and implemented a live chatting system where customers can directly communicate with internal users.</li>
-                  <li>Dockerized multiple project’s backends and database services which helped to deploy rapidly and gave better portability.</li>
+                  <li>💪  Designed and implemented a live chatting system where customers can directly communicate with internal users.</li>
+                  <li>💪  Dockerized multiple project’s backends and database services which helped to deploy rapidly and gave better portability.</li>
                 </ul>
               </div>
               {/* <div className='exp-skills'>
@@ -214,14 +218,14 @@ const AboutPage: FC = () => {
                 <img src="/images/portfolio/experience/inovace.jpeg" alt="Logo 6"></img>
                 <h1>Inovace Technologies</h1>
                 <h1>Mobile Application Developer</h1>
-                <p>From January-2021 to July-2021</p>
+                <p>January-2021 to July-2021</p>
               </div>
               <div className="exp-describe">
                 <ul>
-                  <li> Implemented features of a mobile application such as the ability for users to upload images
+                  <li>💪 Implemented features of a mobile application such as the ability for users to upload images
                     via camera and gallery from various types of mobile devices with editing options, and image size was reduced to ensure image quality.</li>
-                  <li>Fixed bugs in that mobile application for leave policy, different UI interfaces, scrolling view, and downloading pdf/image files.</li>
-                  <li>Reduced time and memory complexity performance of a feature mobile punch by 10% where geo‐location attendance for employees
+                  <li>💪 Fixed bugs in that mobile application for leave policy, different UI interfaces, scrolling view, and downloading pdf/image files.</li>
+                  <li>💪 Reduced time and memory complexity performance of a feature mobile punch by 10% where geo‐location attendance for employees
                     was taken from the application in real‐time whereabouts, replacing some heavy recursive code functionality.</li>
                 </ul>
               </div>
@@ -235,7 +239,7 @@ const AboutPage: FC = () => {
         </section>
         <section>
           <div className='portfolio-lable'>
-              Projects
+            Projects
           </div>
         </section>
         <section className='portfolio-projects'>
@@ -314,7 +318,7 @@ const AboutPage: FC = () => {
         </section>
         <section>
           <div className='portfolio-lable-customize'>
-             to be continued...
+            to be continued...
           </div>
         </section>
 
