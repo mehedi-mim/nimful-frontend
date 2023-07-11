@@ -1,9 +1,10 @@
+import CenterWrapper from '@/components/common/CenterWrapper/center_wrapper';
 import Wrapper from '@/components/common/Wrapper';
 import React, { FC } from 'react';
 
 const ProfilePage: FC = () => {
   return (
-    <Wrapper hasLeftSidebar={false} hasRightWrapper={false}>
+    <CenterWrapper>
       <div className="profile">
         <section>
           <div className="section-header">
@@ -50,7 +51,7 @@ const ProfilePage: FC = () => {
           </div>
         </section>
       </div>
-    </Wrapper>
+      </CenterWrapper>
   );
 }
 
