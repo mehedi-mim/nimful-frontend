@@ -182,6 +182,14 @@ const AboutPage: FC = () => {
                 <p>Skill:Basic</p>
               </div>
             </div>
+
+            <div className="grid-item">
+              <img src="/images/portfolio/bitbucket.jpeg" alt="Logo 4" />
+              <div className="modal">
+                <p>Tools:Jira,Trello</p>
+                <p>git:Bitbucket,gitlab,github</p>
+              </div>
+            </div>
           </div>
         </section>
 
