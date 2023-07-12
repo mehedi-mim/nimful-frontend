@@ -6,11 +6,12 @@ const Home: FC = () => {
     <>
       <CenterWrapper>
         <div className="home">
-          <div className="centered-container">
+          <div className="centered-container-index">
             <img src="/images/home/nimful.jpg" alt="Profile" className="profile-image"></img>
           </div>
-          <h1>Welcome to nimful...! 🖤 </h1>
-          <h2 >Want to see an exciting feature ? <a className='go' href='/webcloud'>click</a></h2>
+          <div className="centered-container">
+            <h2>Welcome to nimful...! 🖤 Want to see an exciting feature ? <a className='go' href='/webcloud'>click</a> </h2>
+          </div>
         </div>
       </CenterWrapper>
     </>

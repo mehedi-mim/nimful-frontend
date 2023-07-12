@@ -7,9 +7,6 @@ const AboutPage: FC = () => {
     <CenterWrapper>
       <div className="home">
         <div className="centered-container">
-          <img src="/images/about/about.png" alt="Profile" className="profile-image" />
-        </div>
-        <div className="centered-container">
           <h2>Nimful is an impressive portfolio endeavor that incorporates a captivating wordcloud feature. 
             Moreover, it boasts a Chrome extension that seamlessly interacts with the backend, meticulously
              tracking users' visits to diverse websites. The extension diligently logs the duration of each visit and frequency,

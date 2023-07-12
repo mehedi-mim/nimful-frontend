@@ -70,7 +70,7 @@ const AboutPage: FC = () => {
             </ul>
           </div>
           <div className='portfolio-top-middle'>
-            <img src="/images/portfolio/profile.png" alt="Profile" />
+            <img src="/images/contact-page/con.jpg" alt="Profile" />
             <div className="portfolio-links">
               <a href="mailto:mehedi.mim.bd@gmail.com"><img src="/images/portfolio/icon/gmail.png" alt="Gmail" className="small-icon" /></a>
               <a href="https://www.linkedin.com/in/mehedi-mim/"><img src="/images/portfolio/icon/linkedin.png" alt="LinkedIn" className="small-icon" /></a>

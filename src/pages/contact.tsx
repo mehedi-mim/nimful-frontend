@@ -7,7 +7,7 @@ const ContactPage: FC = () => {
             <div className="contact-container">
                 <div className="contact-form">
                     <div className="image-container">
-                        <img src="images/contact-page/profile.png" alt="Profile Image" />
+                        <img src="images/contact-page/con.jpg" alt="Profile Image" />
                         <div className="cloud">
                             <span className="question">Want to reach me?</span>
                         </div>

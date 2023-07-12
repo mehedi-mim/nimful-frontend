@@ -1,3 +1,4 @@
+import CenterWrapper from '@/components/common/CenterWrapper/center_wrapper';
 import Wrapper from '@/components/common/Wrapper';
 import React, { FC, useState } from 'react';
 
@@ -13,7 +14,7 @@ const WebCloudTutorial: FC = () => {
     };
 
     return (
-        <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
+        <CenterWrapper>
             <div className="webcloud-tutorial-container">
                 <div className="section">
                     <h1>Initial setup for connecting webcloud.</h1>
@@ -66,7 +67,7 @@ const WebCloudTutorial: FC = () => {
                 {/* Rest of the sections and content */}
 
             </div>
-        </Wrapper>
+        </CenterWrapper>
     );
 }
 

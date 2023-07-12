@@ -3,7 +3,7 @@ import React from 'react';
 
 const SuccessPage = () => {
     return (
-        <Wrapper hasLeftSidebar={true} hasRightWrapper={true}>
+        <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
             <div>
                 <div className="success-page">
                     <h1>Success!</h1>
