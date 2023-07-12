@@ -22,7 +22,7 @@
   }
   
   .logo:hover{
-    font-weight: bold;
+    color: #ecece4;
   }
 
   .nav-links {
@@ -40,7 +40,9 @@
   }
   
   .nav-links li:hover {
-    color: #000;
-    font-weight: bold;
+    color: rgb(0, 0, 0);
   }
   
+  .nav-links a:hover {
+    color: rgb(237, 240, 59);
+  }
