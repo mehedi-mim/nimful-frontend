@@ -1,9 +1,13 @@
-import React, { useState ,useEffect} from 'react';
-import { toast} from 'react-toastify';
+import React, { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 const Signup = () => {
+
+  const [showLabel, setShowLabel] = useState(false);
+
+
 
   const [username, setUserName] = useState('');
   const [first_name, setFirstName] = useState('');
@@ -12,7 +16,7 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [mobile, setPhoneNumber] = useState('');
-  
+
   useEffect(() => {
     const access_token = localStorage.getItem('access_token');
     if (access_token) {
@@ -20,8 +24,8 @@ const Signup = () => {
     }
   }, []);
 
-  const handleSignup = async (e:React.FormEvent<HTMLFormElement>) => {
-    
+  const handleSignup = async (e: React.FormEvent<HTMLFormElement>) => {
+
     e.preventDefault();
 
     // Create a signup data object
@@ -29,7 +33,7 @@ const Signup = () => {
       toast.error('Confirm password not matched!');
       return;
     }
-    
+
 
 
     const signupData = {
@@ -54,8 +58,8 @@ const Signup = () => {
         // Signup successful
         const data = await response.text();
         toast.success(data);
-        window.location.href = '/login'; 
-        
+        window.location.href = '/login';
+
       } else {
         // Signup failed
         const errorData = await response.json();
@@ -67,49 +71,55 @@ const Signup = () => {
   };
 
   return (
-    
+
     <div>
       <h2>🖊️ Signup</h2>
       <form onSubmit={handleSignup}>
+        <section className="label">
+          Username</section>
         <input
           type="text"
-          placeholder="Username"
           value={username}
           onChange={(e) => setUserName(e.target.value)}
         />
+        <section className='label'>First Name</section>
         <input
           type="text"
-          placeholder="First Name"
           value={first_name}
           onChange={(e) => setFirstName(e.target.value)}
         />
+        <section className='label'>Last Name</section>
+
         <input
           type="text"
-          placeholder="Last Name"
           value={last_name}
           onChange={(e) => setSurname(e.target.value)}
         />
+        <section className='label'>Email</section>
+
         <input
           type="email"
-          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        <section className='label'>Password</section>
+
         <input
           type="password"
-          placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        <section className='label'>Confirm Password</section>
+
         <input
           type="password"
-          placeholder="Confirm Password"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
+        <section className='label'>Phone Number</section>
+
         <input
           type="tel"
-          placeholder="Phone Number (+880)"
           value={mobile}
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
