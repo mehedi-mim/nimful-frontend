@@ -118,66 +118,69 @@ const AboutPage: FC = () => {
           <div className="grid-container">
             <div className="grid-item">
               <img src="/images/portfolio/python.jpeg" alt="Logo 1" />
-            </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/fastapi.png" alt="Logo 5" />
+              <div className="modal">
+                <p>Langugae:Python</p>
+                <p>Skill:Fluent(FastAPI),Beginner(Django)</p>
+              </div>
             </div>
             <div className="grid-item">
               <img src="/images/portfolio/strawberry.jpeg" alt="Logo 5" />
+              <div className="modal">
+                <p>Convention:REST,GraphQL(Strawberry)</p>
+                <p>Workspace:3 Live-Projects</p>
+              </div>
             </div>
             <div className="grid-item">
-              <img src="/images/portfolio/postgres.png" alt="Logo 6" />
-            </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/redis.png" alt="Logo 4" />
-            </div>
-
-            <div className="grid-item">
-              <img src="/images/portfolio/aws.png" alt="Logo 1" />
-            </div>
-
-            <div className="grid-item">
-              <img src="/images/portfolio/C_C_featuredimage.png" alt="Logo 2" />
-
-            </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/dart.png" alt="Logo 3" />
-
-            </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/fargate.png" alt="Logo 4" />
-
+              <img src="/images/portfolio/post.png" alt="Logo 6" />
+              <div className="modal">
+                <p>Spec:RDBMS,NoSQL,Caching,Brokers</p>
+                <p>Tools:PostgreSQL(Fluent),Firebase(Fluent),MySQL(Basic),SQLite(Basic),Hive(Basic),Redis(Competetive),RabbitMQ(Basic)</p>
+              </div>
             </div>
 
             <div className="grid-item">
-              <img src="/images/portfolio/flutter.jpeg" alt="Logo 6" />
-            </div>
-
-
-            <div className="grid-item">
-              <img src="/images/portfolio/js.png" alt="Logo 2" />
-            </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/kong.png" alt="Logo 3" />
-            </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/minikube.png" alt="Logo 4" />
-            </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/mysql.png" alt="Logo 5" />
-            </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/java.png" alt="Logo 1" />
-            </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/rabbitmq.png" alt="Logo 2" />
-            </div>
-            <div className="grid-item">
-              <img src="/images/portfolio/react.jpeg" alt="Logo 3" />
+              <img src="/images/portfolio/awss.png" alt="Logo 1" />
+              <div className="modal">
+                <p>Spec:AWS</p>
+                <p>Workspace:S3,Transcribe,Fargate,Comprehend,EC2,ECS</p>
+              </div>
             </div>
 
             <div className="grid-item">
-              <img src="/images/portfolio/typescript.png" alt="Logo 6" />
+              <img src="/images/portfolio/c.png" alt="Logo 2" />
+              <div className="modal">
+                <p>Language:C/C++</p>
+                <p>Skill:Fluent</p>
+              </div>
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/react.png" alt="Logo 3" />
+              <div className="modal">
+                <p>Name:React</p>
+                <p>Skill:Competetive</p>
+              </div>
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/type.png" alt="Logo 6" />
+              <div className="modal">
+                <p>Language:TypeScript</p>
+                <p>Skill:Competetive</p>
+              </div>
+            </div>
+            <div className="grid-item">
+              <img src="/images/portfolio/flutter.png" alt="Logo 3" />
+              <div className="modal">
+                <p>Language:Dart(Flutter)</p>
+                <p>Skill:Competetive</p>
+              </div>
+            </div>
+
+            <div className="grid-item">
+              <img src="/images/portfolio/kube.png" alt="Logo 4" />
+              <div className="modal">
+                <p>Spec:Kubernetes(Minikube)</p>
+                <p>Skill:Basic</p>
+              </div>
             </div>
           </div>
         </section>
@@ -199,31 +202,31 @@ const AboutPage: FC = () => {
               <div className="exp-describe">
                 <ul>
                   <li>
-                  ● Developed a web‐based product with user management, scraping products from URLS, server‐side notifications,
+                    ● Developed a web‐based product with user management, scraping products from URLS, server‐side notifications,
                     and the ability to capture live data (video, comments, likes, followers) from live‐streaming platforms.
                   </li>
 
                   <li>
-                  ●  Implemented multiple web application features such as invoices, payment system, certificate generation per donation,
+                    ●  Implemented multiple web application features such as invoices, payment system, certificate generation per donation,
                     and report generation from customer surveys via Questionnaire.
                   </li>
 
                   <li>
-                  ● Maintain effective one-to-one and team communication channels, including email, video calls, and messaging,
+                    ● Maintain effective one-to-one and team communication channels, including email, video calls, and messaging,
                     for requirements analysis and bottleneck resolution in order to ensure clear understanding and collaborative problem-solving.
                   </li>
 
                   <li>
-                  ●  Designed and implemented a live chatting system where customers can directly communicate with internal users.
+                    ●  Designed and implemented a live chatting system where customers can directly communicate with internal users.
                   </li>
 
                   <li>
-                  ● Implemented Stripe for secure payment processing, leveraging its robust security features and compliance with industry
+                    ● Implemented Stripe for secure payment processing, leveraging its robust security features and compliance with industry
                     standards to ensure the protection of sensitive customer information.
                   </li>
 
                   <li>
-                  ●  Dockerized multiple project’s backends and database services which helped to deploy rapidly and gave better portability.
+                    ●  Dockerized multiple project’s backends and database services which helped to deploy rapidly and gave better portability.
                   </li>
 
 
@@ -337,7 +340,7 @@ const AboutPage: FC = () => {
                 Assigned users resolve these tickets, ensuring timely resolution.
                 When a customer creates a ticket, they can specify the relevant Department to ensure that it reaches the appropriate
                 team or individual responsible for handling that particular area.
-                 This feature helps to ensure that the right experts are assigned to address the specific issues or inquiries raised by the customers.
+                This feature helps to ensure that the right experts are assigned to address the specific issues or inquiries raised by the customers.
                 Additionally, this application integrates a live chatting system.
                 This feature enables customers to have real-time conversations with support agents or assigned users.
                 It provides a convenient and interactive platform for customers to receive immediate assistance  and receive updates on their tickets.
