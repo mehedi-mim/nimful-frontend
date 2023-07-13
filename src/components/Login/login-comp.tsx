@@ -13,8 +13,6 @@ const Login = () => {
     }
   }, []);
 
-
-
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const loginData = {
@@ -24,22 +22,24 @@ const Login = () => {
     
     try {
       // Perform login logic
-      const response = await fetch('http://localhost:8080/api/v1/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(loginData)
-      });
-
-      if (response.ok) {
-        const success_data = await response.json();
-        localStorage.setItem('access_token', success_data.access_token);
-        toast.success('Login successful');
-        window.location.href = '/'; // Redirect to the Home page
-      } else {
-        toast.error('Login failed');
-      }
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/login`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(loginData)
+        });
+  
+        if (response.ok) {
+          const success_data = await response.json();
+          localStorage.setItem('access_token', success_data.access_token);
+          toast.success('Login successful');
+          window.location.href = '/'; // Redirect to the Home page
+        } else {
+          toast.error('Login failed');
+        }
+      
+   
     } catch (error) {
       toast.error('An error occurred');
     }

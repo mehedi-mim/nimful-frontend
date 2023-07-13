@@ -1,5 +1,4 @@
 import CenterWrapper from '@/components/common/CenterWrapper/center_wrapper';
-import Wrapper from '@/components/common/Wrapper';
 import React, { FC } from 'react';
 
 const AboutPage: FC = () => {

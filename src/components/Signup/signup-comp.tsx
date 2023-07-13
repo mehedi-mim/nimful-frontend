@@ -46,7 +46,7 @@ const Signup = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:8080/api/v1/signup', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

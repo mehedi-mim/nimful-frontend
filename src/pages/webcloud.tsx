@@ -4,13 +4,14 @@ import Wrapper from '@/components/common/Wrapper';
 import { ToastContainer } from 'react-toastify';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 const WordCloud = dynamic(
   () => import('react-d3-cloud'),
   { ssr: false }
 )
 
 const ParentComponent = () => {
+  const [can_show_cloud,setCloud] = useState(false)
+
   const [data, setData] = useState([
     { text: 'login.com', value: 1000 },
     { text: 'signup.com', value: 200 },
@@ -29,7 +30,10 @@ const ParentComponent = () => {
         toast.error('Please login!');
         setTimeout(() => {
           window.location.href = '/login';
-        }, 3000);
+        }, 4000);
+      }
+      else{
+        setCloud(true)
       }
     });
 
@@ -39,8 +43,7 @@ const ParentComponent = () => {
   useEffect(() => {
     const access_token = localStorage.getItem('access_token');
 
-    // Make your API call here and replace the placeholder URL with your actual API endpoint
-    fetch('http://localhost:8080/api/v1/web-cloud', {
+    fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/web-cloud`, {
       headers: {
         'access_token': `${access_token}`
       }
@@ -60,13 +63,17 @@ const ParentComponent = () => {
         console.log(error);
       });
   }, []);
-  console.log(data)
+
   return (
     <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
       <div className="webcloud-page">
         <ToastContainer />
         <div className="webcloud-container">
-          <WordCloud data={data} />
+        {can_show_cloud ? (
+        <WordCloud data={data} />
+      ) : <div className='centered-container'>
+          <img src="/images/webcloud/show-fixed.png" alt="Profile"></img>
+      </div> }
         </div>
       </div>
     </Wrapper>

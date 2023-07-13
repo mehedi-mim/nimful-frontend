@@ -6,7 +6,7 @@ const VerificationPage = () => {
     const verifyToken = async () => {
       const token = new URLSearchParams(window.location.search).get('token');
       try {
-        const response = await fetch('http://52.66.247.18:8080/api/v1/verify-signup', {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/login/verify-signup`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
