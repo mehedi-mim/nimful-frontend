@@ -1,27 +1,42 @@
 .home {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   height: 90vh;
   font-family: 'Times New Roman', Times, serif;
+  margin-left: 500px;
 }
 
+.about-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 60px;
+}
+.nimful-about-header{
+  margin-top: 40px;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+}
 .centered-container {
   text-align: left;
   margin-bottom: 20px;
-  margin-left: 70px;
+  margin-left: 20px;
 }
 .centered-container h2{
   text-align: left;
   margin-top: 12px;
 }
+
 .profile-image {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid rgb(120, 138, 43);
 }
 
 .go{

@@ -16,54 +16,28 @@ const WebCloudTutorial: FC = () => {
     return (
         <CenterWrapper>
             <div className="webcloud-tutorial-container">
-                <div className="section">
+                <section className='tutorial-name'>
                     <h1>Initial setup for connecting webcloud.</h1>
-                </div>
-
-                <div className="section">
-                    <ul>
-                    <li className="clickable" onClick={() => togglePoint(2)}>Objective</li>
-                        {expandedPoints.includes(2) && (
-                            <div className='Chield-one'>
-                                <p>[Text explaining how to install the WebCloud extension.]</p>
-                                <div className="code-example">
-                                    <pre>
-                                        <code>
-                                            {/* Include the code snippet demonstrating how to install the extension */}
-                                        </code>
-                                    </pre>
-                                </div>
-                            </div>
-                        )}
-                        <li className="clickable" onClick={() => togglePoint(2)}>Install extension</li>
-                        {expandedPoints.includes(2) && (
-                            <div className='Chield-one'>
-                                <p>[Text explaining how to install the WebCloud extension.]</p>
-                                <div className="code-example">
-                                    <pre>
-                                        <code>
-                                            {/* Include the code snippet demonstrating how to install the extension */}
-                                        </code>
-                                    </pre>
-                                </div>
-                            </div>
-                        )}
-                        <li className="clickable" onClick={() => togglePoint(3)}>Signup and Connect with Nimful</li>
-                        {expandedPoints.includes(3) && (
-                            <div className='Chield-one'>
-                                <p>[Text explaining how to sign up and connect with Nimful.]</p>
-                                <div className="code-example">
-                                    <pre>
-                                        <code>
-                                            {/* Include the code snippet demonstrating signing up and connecting with Nimful */}
-                                        </code>
-                                    </pre>
-                                </div>
-                            </div>
-                        )}
-                    </ul>
-                </div>
-
+                </section>
+                <section className='tutorial-content'>
+                    <div className='tutorial-content-header'>
+                        <h2>Extentsion Installation.</h2>
+                    </div>
+                    <div className='tutorial-content-list'>
+                            <li>Currently this feature only for chrome users.</li>
+                            <li>Go to chrome web store and download extension <a href='https://chrome.google.com/webstore/category/extensions?gl=IN' className='extension-link'>Nimful</a>.</li>
+                            <li>After installation when you open the extension, it will ask you for a seed. You can click generate seed and it will redirect you to nimful website.</li>
+                        </div>
+                    <div className='tutorial-content-header'>
+                        <h2>Signup and Connect with Extension.</h2>
+                    </div>
+                    <div className='tutorial-content-list'>
+                            <li>Signup and login to the system.</li> 
+                            <li>Go to <a href='/profile' className='extension-link'>profile</a> section. You will see your current seed.You can always generate a new seed. Click generate new for having a new seed.</li>
+                            <li>Copy your seed, paste it to nimful extension and hit submit.</li>
+                            <li>Ta-daaaaaa! now you can open any tab, visit websites, it will track your visited domains. See what's <a href='/webcloud' className='extension-link'>webcloud</a> for you.</li>
+                        </div>
+                </section>
                 {/* Rest of the sections and content */}
 
             </div>

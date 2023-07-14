@@ -7,10 +7,10 @@ const Home: FC = () => {
       <CenterWrapper>
         <div className="home">
           <div className="centered-container-index">
-            <img src="/images/home/nimful.jpg" alt="Profile" className="profile-image"></img>
+            <img src="/images/home/home.webp" alt="Profile" className="profile-image"></img>
           </div>
           <div className="centered-container">
-            <h2>Welcome to nimful...! 🖤 Want to see an exciting feature ? <a className='go' href='/webcloud'>click</a> </h2>
+            <h2>Welcome to nimful... 🖤, want to see an exciting feature ? <a className='go' href='/webcloud'>click</a> </h2>
           </div>
         </div>
       </CenterWrapper>

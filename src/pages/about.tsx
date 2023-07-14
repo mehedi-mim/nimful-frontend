@@ -4,8 +4,10 @@ import React, { FC } from 'react';
 const AboutPage: FC = () => {
   return (
     <CenterWrapper>
-      <div className="home">
+      <div className="about-home">
+        
         <div className="centered-container">
+          <h1 className='nimful-about-header'>What's Nimful?</h1>
           <h2>Nimful is an impressive portfolio endeavor that incorporates a captivating wordcloud feature. 
             Moreover, it boasts a Chrome extension that seamlessly interacts with the backend, meticulously
              tracking users' visits to diverse websites. The extension diligently logs the duration of each visit and frequency,
