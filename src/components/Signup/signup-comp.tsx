@@ -116,13 +116,6 @@ const Signup = () => {
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
-        <section className='label'>Phone Number</section>
-
-        <input
-          type="tel"
-          value={mobile}
-          onChange={(e) => setPhoneNumber(e.target.value)}
-        />
         <button type="submit">Signup</button>
       </form>
     </div>
