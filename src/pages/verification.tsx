@@ -1,23 +1,30 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { reduceEachTrailingCommentRange } from 'typescript';
 
 const VerificationPage = () => {
-
+  const isMountedRef = useRef(true);
   useEffect(() => {
+    if(isMountedRef.current ===false)return
+   const token = new URLSearchParams(window?.location.search).get('token');
     const verifyToken = async () => {
-      const token = new URLSearchParams(window.location.search).get('token');
+     
+      console.log({token})
       try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/login/verify-signup`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ token })
-        });
-
-        if (response.ok) {
+        if (!!token && process.env.NEXT_PUBLIC_BACKEND_BASE_URL) {
+        
+          const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/verify-signup`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ token })
+          });
+          if (response.ok) {
+            
             window.location.href = '/success';
-        } else {
+          } else {
             window.location.href = '/failed';
+          }
         }
       } catch (error) {
         console.log("Error occurred:", error);
@@ -25,6 +32,8 @@ const VerificationPage = () => {
     };
 
     verifyToken();
+    return () => void (!!token ?isMountedRef.current = false:isMountedRef.current =true);
+    
   }, []);
 
   return (
