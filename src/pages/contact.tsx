@@ -1,31 +1,90 @@
 import Wrapper from '@/components/common/Wrapper';
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+import { toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactPage: FC = () => {
-    return (
-        <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
-            <div className="contact-container">
-                <div className="contact-form">
-                    <div className="image-container">
-                        <img src="images/contact-page/con.jpg" alt="Profile Image" />
-                        <div className="cloud">
-                            <span className="question">Want to reach me?</span>
-                        </div>
-                    </div>
-                    <input type="text" placeholder="Your full name" />
-                    <input type="text" placeholder="Subject" />
-                    <textarea placeholder="Message" rows={4} />
-                    <button type="submit">Send</button>
-                </div>
-                <div className="contact-links">
-                    <a href="https://www.facebook.com/mhm.cse">Facebook</a>
-                    <a href="https://twitter.com/mHm_cse">Twitter</a>
-                    <a href="mailto:mehedi.mim.bd@gmail.com">Gmail</a>
-                    <a href="https://www.linkedin.com/in/mehedi-mim/">Linked in</a>
+  const [sender_name, setFullName] = useState<string>('');
+  const [subject, setSubject] = useState<string>('');
+  const [message, setMessage] = useState<string>('');
+  const [responseMessage, setResponseMessage] = useState<string>('');
+  const [errorMessage, setErrorMessage] = useState<string>('');
 
-                </div>
+  const handleSend = async () => {
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/contact-me`,{
+        method: 'POST',
+        // Add necessary headers and body for the API request
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          sender_name,
+          subject,
+          message,
+        }),
+      });
+
+      if (response.ok) {
+        setResponseMessage('Message sent successfully!');
+        toast.success('We got a message from you,thanks!');
+        setFullName('')
+        setSubject('')
+        setMessage('')
+      } else {
+        const errorData = await response.json();
+        setErrorMessage(errorData.message || 'An error occurred.');
+        toast.error('Sorry,we are having some problem while receiving your message!');
+      }
+    } catch (error) {
+      setErrorMessage('An error occurred.');
+      console.error(error);
+    }
+  };
+
+  return (
+    <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
+      <div className="contact-container"> 
+      <ToastContainer />
+        <div className="contact-form">
+          <div className="image-container">
+            <img src="images/contact-page/con.jpg" alt="Profile Image" />
+            <div className="cloud">
+              <span className="question">Want to reach me?</span>
             </div>
-        </Wrapper>
-    );
-}
+          </div>
+          <input
+            type="text"
+            placeholder="Your full name"
+            value={sender_name}
+            onChange={(e) => setFullName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+          />
+          <textarea
+            placeholder="Message"
+            rows={4}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+          <button type="submit" onClick={handleSend}>
+            Send
+          </button>
+        </div>
+        <div className="contact-links">
+          <a href="https://www.facebook.com/mhm.cse">Facebook</a>
+          <a href="https://twitter.com/mHm_cse">Twitter</a>
+          <a href="mailto:mehedi.mim.bd@gmail.com">Gmail</a>
+          <a href="https://www.linkedin.com/in/mehedi-mim/">Linked in</a>
+        </div>
+      </div>
+    </Wrapper>
+  );
+};
+
 export default ContactPage;
