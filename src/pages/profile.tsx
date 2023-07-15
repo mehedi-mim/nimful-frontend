@@ -1,54 +1,81 @@
 import React, { FC, useEffect, useState } from 'react';
 import CenterWrapper from '@/components/common/CenterWrapper/center_wrapper';
-import Wrapper from '@/components/common/Wrapper';
-
-
-interface ProfileData {
-  full_name: string;
-  user_name: string;
-  seed:string;
-}
 
 const ProfilePage: FC = () => {
+  const [fullName, setFullName] = useState<string>('N/A');
+  const [userName, setUserName] = useState<string>('N/A');
+  const [seed, setSeed] = useState<string>('N/A');
+  const [accessToken, setAccessToken] = useState<string | null>(null);
+  const [copyText, setCopyText] = useState<string>('Click to Copy');
 
-
-  const [profileData, setProfileData] = useState<ProfileData | null>(null);
-  const defaultProfileData: ProfileData = {
-    full_name: 'N/A',
-    user_name: 'N/A',
-    seed:'N/A'
-  };
-  console.log(profileData+"Hi-----------")
   useEffect(() => {
-    const access_token = localStorage.getItem('access_token');
-    if (!access_token) {
-        window.location.href = '/login';
+    const storedAccessToken = localStorage.getItem('access_token');
+    if (!storedAccessToken) {
+      window.location.href = '/login';
+    } else {
+      setAccessToken(storedAccessToken);
+      fetchProfileData(storedAccessToken);
     }
-    fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/self-profile`,{
+  }, []);
+
+  const fetchProfileData = (token: string) => {
+    fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/self-profile`, {
       headers: {
-        'access_token': `${access_token}`
+        'access_token': token
       }
     })
       .then(response => response.json())
       .then(data => {
-        setProfileData(data.json() || defaultProfileData);
+        setFullName(data.full_name);
+        setUserName(data.user_name);
+        setSeed(data.seed);
       })
       .catch(error => {
         console.error('Error fetching profile data:', error);
-        setProfileData(defaultProfileData);
       });
-  }, []);
+  };
+
+  const copySeedToClipboard = () => {
+    navigator.clipboard.writeText(seed)
+      .then(() => {
+        console.log('Seed copied to clipboard:', seed);
+        setCopyText('Seed Copied');
+      })
+      .catch(error => {
+        console.error('Error copying seed to clipboard:', error);
+      });
+  };
+
+  const generateNewSeed = () => {
+    fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/generate-new-seed`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'access_token': accessToken!
+      }
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.seed) {
+          setSeed(data.seed);
+          fetchProfileData(accessToken!);
+        }
+      })
+      .catch(error => {
+        console.error('Error generating new seed:', error);
+      });
+  };
 
   return (
-
     <CenterWrapper>
       <div className="profile">
+        <div className="profile-header">Profile</div>
         <section>
           <div className="section-header">
             <h2>Name</h2>
           </div>
           <div className="section-content">
-            <p>{profileData?.full_name}</p>
+            <p>{fullName}</p>
           </div>
         </section>
 
@@ -57,7 +84,7 @@ const ProfilePage: FC = () => {
             <h2>Username</h2>
           </div>
           <div className="section-content">
-            <p>{profileData?.user_name}</p>
+            <p>{userName}</p>
           </div>
         </section>
 
@@ -66,14 +93,20 @@ const ProfilePage: FC = () => {
             <h2>Current nim-seed</h2>
           </div>
           <div className="seed">
-            <p>{profileData?.seed}</p>
-            <a href="#">generate new?</a>
+            <p
+              onClick={copySeedToClipboard}
+              onMouseEnter={() => setCopyText('Click to Copy')}
+              onMouseLeave={() => setCopyText('')}
+            >
+              {seed}
+              <span className="copy-suggestion">{copyText}</span>
+            </p>
+            <a href="#" onClick={generateNewSeed}>generate new?</a>
           </div>
         </section>
-
       </div>
     </CenterWrapper>
   );
-}
+};
 
 export default ProfilePage;
