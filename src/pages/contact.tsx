@@ -8,8 +8,6 @@ const ContactPage: FC = () => {
   const [sender_name, setFullName] = useState<string>('');
   const [subject, setSubject] = useState<string>('');
   const [message, setMessage] = useState<string>('');
-  const [responseMessage, setResponseMessage] = useState<string>('');
-  const [errorMessage, setErrorMessage] = useState<string>('');
 
   const handleSend = async () => {
     try {
@@ -27,18 +25,17 @@ const ContactPage: FC = () => {
       });
 
       if (response.ok) {
-        setResponseMessage('Message sent successfully!');
-        toast.success('We got a message from you,thanks!');
+        console.log(response)
+        const data = await response.json()
+        toast.success(data.message);
         setFullName('')
         setSubject('')
         setMessage('')
       } else {
         const errorData = await response.json();
-        setErrorMessage(errorData.message || 'An error occurred.');
-        toast.error('Sorry,we are having some problem while receiving your message!');
+        toast.error(errorData.detail);
       }
     } catch (error) {
-      setErrorMessage('An error occurred.');
       console.error(error);
     }
   };
