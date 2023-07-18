@@ -4,6 +4,7 @@ import Wrapper from '@/components/common/Wrapper';
 import { ToastContainer } from 'react-toastify';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import CenterWrapper from '@/components/common/CenterWrapper/center_wrapper';
 const WordCloud = dynamic(
   () => import('react-d3-cloud'),
   { ssr: false }
@@ -50,12 +51,9 @@ const ParentComponent = () => {
     })
       .then(response => response.json())
       .then(responseData => {
-        // Check if the response data is an empty array
         if (Array.isArray(responseData) && responseData.length === 0) {
-          // If the response data is an empty array, keep the existing data as it is
           setData(data);
         } else {
-          // If the response data is not an empty array, assign the response data to the data variable
           setData(responseData);
         }
       })
@@ -65,18 +63,19 @@ const ParentComponent = () => {
   }, []);
 
   return (
-    <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
+    <CenterWrapper>
       <div className="webcloud-page">
         <ToastContainer />
         <div className="webcloud-container">
         {can_show_cloud ? (
         <WordCloud data={data} />
-      ) : <div className='centered-container'>
+      ) : <div className='centered-container-webcloud'>
           <img src="/images/webcloud/show-fixed.png" alt="Profile"></img>
       </div> }
         </div>
       </div>
-    </Wrapper>
+    </CenterWrapper>
+
   );
 };
 
