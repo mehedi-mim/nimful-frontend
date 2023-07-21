@@ -1,0 +1,52 @@
+Arguments: 
+  /home/torxebec/.nvm/versions/node/v18.16.1/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /home/torxebec/.nvm/versions/node/v18.16.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/home/torxebec/Desktop/personal/projects/nimful-frontend/node_modules/@typescript-eslint/typescript-estree/node_modules'
+
+npm manifest: 
+  {
+    "name": "nimful",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@types/node": "20.1.5",
+      "@types/react": "18.2.6",
+      "autoprefixer": "10.4.14",
+      "dotenv": "^16.3.1",
+      "eslint": "8.40.0",
+      "eslint-config-next": "13.4.2",
+      "next": "13.4.2",
+      "postcss": "8.4.23",
+      "react": "18.2.0",
+      "react-dom": "^18.0.0",
+      "react-d3-cloud": "^1.0.6",
+      "react-toastify": "^9.1.3",
+      "tailwindcss": "3.3.2",
+      "typescript": "5.0.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  
