@@ -5,4 +5,13 @@ services:
     image: nimful-frontend
     container_name: nimful-frontend
     ports:
-      - 3000:3000
+      - 3000
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: nimful-nginx
+    ports:
+      - 80:80
+    depends_on:
+      - nimful-frontend
