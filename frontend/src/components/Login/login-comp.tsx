@@ -22,6 +22,7 @@ const Login = () => {
     
     try {
       // Perform login logic
+        console.log("Backend Base URL:", process.env.NEXT_PUBLIC_BACKEND_BASE_URL);
         const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/login`, {
           method: 'POST',
           headers: {
