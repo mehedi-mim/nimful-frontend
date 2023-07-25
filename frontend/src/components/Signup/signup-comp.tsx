@@ -46,24 +46,27 @@ const Signup = () => {
     };
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/signup`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(signupData)
-      });
-
-      if (response.ok) {
-        // Signup successful
-        const data = await response.text();
-        toast.success(data);
-        window.location.href = '/login';
-
-      } else {
-        // Signup failed
-        const errorData = await response.json();
-        toast.error(errorData.detail);
+      if (process.env.NEXT_PUBLIC_BACKEND_BASE_URL){
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/signup`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(signupData)
+        });
+  
+        if (response.ok) {
+          // Signup successful
+          const data = await response.text();
+          toast.success(data);
+          window.location.href = '/login';
+  
+        } else {
+          // Signup failed
+          const errorData = await response.json();
+          toast.error(errorData.detail);
+        }
+  
       }
     } catch (error) {
       toast.error('An error occurred');

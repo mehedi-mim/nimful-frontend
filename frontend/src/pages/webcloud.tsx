@@ -11,7 +11,7 @@ const WordCloud = dynamic(
 )
 
 const ParentComponent = () => {
-  const [can_show_cloud,setCloud] = useState(false)
+  const [can_show_cloud, setCloud] = useState(false)
 
   const [data, setData] = useState([
     { text: 'login.com', value: 1000 },
@@ -33,7 +33,7 @@ const ParentComponent = () => {
           window.location.href = '/login';
         }, 4000);
       }
-      else{
+      else {
         setCloud(true)
       }
     });
@@ -43,23 +43,25 @@ const ParentComponent = () => {
 
   useEffect(() => {
     const access_token = localStorage.getItem('access_token');
-
-    fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/web-cloud`, {
-      headers: {
-        'access_token': `${access_token}`
-      }
-    })
-      .then(response => response.json())
-      .then(responseData => {
-        if (Array.isArray(responseData) && responseData.length === 0) {
-          setData(data);
-        } else {
-          setData(responseData);
+    if (process.env.NEXT_PUBLIC_BACKEND_BASE_URL) {
+      fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/web-cloud`, {
+        headers: {
+          'access_token': `${access_token}`
         }
       })
-      .catch(error => {
-        console.log(error);
-      });
+        .then(response => response.json())
+        .then(responseData => {
+          if (Array.isArray(responseData) && responseData.length === 0) {
+            setData(data);
+          } else {
+            setData(responseData);
+          }
+        })
+        .catch(error => {
+          console.log(error);
+        });
+
+    }
   }, []);
 
   return (
@@ -67,11 +69,11 @@ const ParentComponent = () => {
       <div className="webcloud-page">
         <ToastContainer />
         <div className="webcloud-container">
-        {can_show_cloud ? (
-        <WordCloud data={data} />
-      ) : <div className='centered-container-webcloud'>
-          <img src="/images/webcloud/show-fixed.png" alt="Profile"></img>
-      </div> }
+          {can_show_cloud ? (
+            <WordCloud data={data} />
+          ) : <div className='centered-container-webcloud'>
+            <img src="/images/webcloud/show-fixed.png" alt="Profile"></img>
+          </div>}
         </div>
       </div>
     </CenterWrapper>

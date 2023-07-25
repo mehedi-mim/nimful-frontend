@@ -1,7 +1,7 @@
 import Wrapper from '@/components/common/Wrapper';
 import React, { FC, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
-import { toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const ContactPage: FC = () => {
@@ -11,30 +11,33 @@ const ContactPage: FC = () => {
 
   const handleSend = async () => {
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/contact-me`,{
-        method: 'POST',
-        // Add necessary headers and body for the API request
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          sender_name,
-          subject,
-          message,
-        }),
-      });
+      if (process.env.NEXT_PUBLIC_BACKEND_BASE_URL) {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/contact-me`, {
+          method: 'POST',
+          // Add necessary headers and body for the API request
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            sender_name,
+            subject,
+            message,
+          }),
+        });
 
-      if (response.ok) {
-        console.log(response)
-        const data = await response.json()
-        toast.success(data.message);
-        setFullName('')
-        setSubject('')
-        setMessage('')
-      } else {
-        const errorData = await response.json();
-        toast.error(errorData.detail);
+        if (response.ok) {
+          console.log(response)
+          const data = await response.json()
+          toast.success(data.message);
+          setFullName('')
+          setSubject('')
+          setMessage('')
+        } else {
+          const errorData = await response.json();
+          toast.error(errorData.detail);
+        }
       }
+
     } catch (error) {
       console.error(error);
     }
@@ -42,8 +45,8 @@ const ContactPage: FC = () => {
 
   return (
     <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
-      <div className="contact-container"> 
-      <ToastContainer />
+      <div className="contact-container">
+        <ToastContainer />
         <div className="contact-form">
           <div className="image-container">
             <img src="images/contact-page/con.jpg" alt="Profile Image" />

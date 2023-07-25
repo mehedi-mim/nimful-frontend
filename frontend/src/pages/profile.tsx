@@ -19,20 +19,22 @@ const ProfilePage: FC = () => {
   }, []);
 
   const fetchProfileData = (token: string) => {
-    fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/self-profile`, {
-      headers: {
-        'access_token': token
-      }
-    })
-      .then(response => response.json())
-      .then(data => {
-        setFullName(data.full_name);
-        setUserName(data.user_name);
-        setSeed(data.seed);
+    if (process.env.NEXT_PUBLIC_BACKEND_BASE_URL) {
+      fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/self-profile`, {
+        headers: {
+          'access_token': token
+        }
       })
-      .catch(error => {
-        console.error('Error fetching profile data:', error);
-      });
+        .then(response => response.json())
+        .then(data => {
+          setFullName(data.full_name);
+          setUserName(data.user_name);
+          setSeed(data.seed);
+        })
+        .catch(error => {
+          console.error('Error fetching profile data:', error);
+        });
+    }
   };
 
   const copySeedToClipboard = () => {
@@ -47,23 +49,25 @@ const ProfilePage: FC = () => {
   };
 
   const generateNewSeed = () => {
-    fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/generate-new-seed`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'access_token': accessToken!
-      }
-    })
-      .then(response => response.json())
-      .then(data => {
-        if (data.seed) {
-          setSeed(data.seed);
-          fetchProfileData(accessToken!);
+    if (process.env.NEXT_PUBLIC_BACKEND_BASE_URL) {
+      fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/generate-new-seed`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'access_token': accessToken!
         }
       })
-      .catch(error => {
-        console.error('Error generating new seed:', error);
-      });
+        .then(response => response.json())
+        .then(data => {
+          if (data.seed) {
+            setSeed(data.seed);
+            fetchProfileData(accessToken!);
+          }
+        })
+        .catch(error => {
+          console.error('Error generating new seed:', error);
+        });
+    }
   };
 
   return (

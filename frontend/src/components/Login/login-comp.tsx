@@ -22,25 +22,26 @@ const Login = () => {
     
     try {
       // Perform login logic
-        console.log("Backend Base URL:", process.env.NEXT_PUBLIC_BACKEND_BASE_URL);
-        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/login`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(loginData)
-        });
-  
-        if (response.ok) {
-          const success_data = await response.json();
-          localStorage.setItem('access_token', success_data.access_token);
-          toast.success('Login successful');
-          window.location.href = '/'; // Redirect to the Home page
-        } else {
-          toast.error('Login failed');
+        if (process.env.NEXT_PUBLIC_BACKEND_BASE_URL){
+          const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/login`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(loginData)
+          });
+    
+          if (response.ok) {
+            const success_data = await response.json();
+            localStorage.setItem('access_token', success_data.access_token);
+            toast.success('Login successful');
+            window.location.href = '/'; // Redirect to the Home page
+          } else {
+            toast.error('Login failed');
+          }
+        
+     
         }
-      
-   
     } catch (error) {
       toast.error('An error occurred');
     }

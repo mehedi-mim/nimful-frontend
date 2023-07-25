@@ -11,7 +11,6 @@ const VerificationPage = () => {
       console.log({token})
       try {
         if (!!token && process.env.NEXT_PUBLIC_BACKEND_BASE_URL) {
-        
           const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/verify-signup`, {
             method: 'POST',
             headers: {
