@@ -53,7 +53,7 @@ const ContactPage: FC = () => {
           </div>
           <input
             type="text"
-            placeholder="Your full name"
+            placeholder="Your email"
             value={sender_name}
             onChange={(e) => setFullName(e.target.value)}
           />
