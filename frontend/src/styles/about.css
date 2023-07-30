@@ -1,33 +1,24 @@
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  height: 90vh;
-  font-family: 'Times New Roman', Times, serif;
-  margin-left: 500px;
-}
+/* Common styles for all screen sizes */
 
 .about-home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: 'Times New Roman', Times, serif;
-  margin-left: 60px;
-}
-.nimful-about-header{
-  margin-top: 40px;
   text-align: left;
+  margin-left: 70px;
+}
+.about-centered-container h2{
+  text-align: left;
+}
+.nimful-about-header {
+  margin-top: 40px;
   font-size: 30px;
   font-weight: bold;
 }
-.centered-container {
-  text-align: left;
-  margin-bottom: 20px;
-  margin-left: 20px;
+
+.home .centered-container-index {
+  text-align: center;
 }
-.centered-container h2{
+
+.centered-container h2 {
   text-align: left;
   margin-top: 12px;
 }
@@ -39,8 +30,62 @@
   object-fit: cover;
 }
 
-.go{
+.go {
   color: #0961e4;
 }
 
+/* Responsive adjustments for screen sizes below 768px (mobile devices) */
+@media (max-width: 767px) {
+  .home {
+    margin-left: 10px;
+  }
 
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .home .centered-container h2 {
+    font-size: 18px;
+  }
+}
+
+/* Responsive adjustments for screen sizes between 768px and 1023px (small devices) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home {
+    margin-left: 30px;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .home .centered-container h2 {
+    font-size: 18px;
+  }
+}
+
+/* Responsive adjustments for screen sizes above 1023px (large devices) */
+@media (min-width: 1024px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+
+  .home .centered-container-index {
+    margin-bottom: 20px;
+  }
+
+  .profile-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .home .centered-container h2 {
+    font-size: 18px;
+  }
+}

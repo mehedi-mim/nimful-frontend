@@ -5,8 +5,7 @@ const AboutPage: FC = () => {
   return (
     <CenterWrapper>
       <div className="about-home">
-        
-        <div className="centered-container">
+        <div className="about-centered-container">
           <h1 className='nimful-about-header'>What's Nimful?</h1>
           <h2>Nimful is an impressive portfolio endeavor that incorporates a captivating webcloud feature. 
             Moreover, it boasts a Chrome extension that seamlessly interacts with the backend, meticulously

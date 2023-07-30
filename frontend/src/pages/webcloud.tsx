@@ -28,7 +28,7 @@ const ParentComponent = () => {
     const timer = setTimeout(() => {
       const access_token = localStorage.getItem('access_token');
       if (!access_token) {
-        toast.error('Please login!');
+        toast.error('Please log in to stay more time...!');
         setTimeout(() => {
           window.location.href = '/login';
         }, 4000);

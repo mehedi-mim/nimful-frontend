@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Signup = () => {
 
   const [showLabel, setShowLabel] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
 
 
@@ -59,8 +60,9 @@ const Signup = () => {
           // Signup successful
           const data = await response.text();
           toast.success(data);
-          window.location.href = '/login';
-  
+          timeoutRef.current = setTimeout(() => {
+            window.location.href = '/login';
+          }, 3000);  
         } else {
           // Signup failed
           const errorData = await response.json();

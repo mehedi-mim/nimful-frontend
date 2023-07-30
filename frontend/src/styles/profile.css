@@ -7,13 +7,14 @@
   /* Adjust the margin as per your sidebar width */
 }
 
-.profile-header{
+.profile-header {
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 10px;
 }
+
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -58,4 +59,53 @@
   font-size: 12px;
   color: gray;
   margin-left: 5px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .profile {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .profile-header {
+    font-size: 24px;
+  }
+
+  .section-content img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .seed p {
+    font-size: 24px;
+  }
+
+  .seed a {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .profile-header {
+    font-size: 20px;
+  }
+
+  .section-content img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .seed p {
+    font-size: 20px;
+  }
+
+  .seed a {
+    font-size: 6px;
+  }
 }

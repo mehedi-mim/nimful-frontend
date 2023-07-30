@@ -85,3 +85,18 @@ button:hover {
   font-family: 'Times New Roman', Times, serif;
   margin-left: 10px;
 }
+
+@media screen and (max-width: 400px) {
+  .signup-page .signup-container {
+    width: 90%;
+  }
+
+  .signup-page .signup-container h2 {
+    font-size: 20px;
+  }
+
+  input,
+  button {
+    font-size: 12px;
+  }
+}

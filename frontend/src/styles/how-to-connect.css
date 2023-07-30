@@ -29,3 +29,72 @@
 .extension-link{
   color: blue;
 }
+
+/* Responsive adjustments for screen sizes below 768px (mobile devices) */
+@media (max-width: 767px) {
+  .webcloud-tutorial-container {
+    margin-left: 20px;
+  }
+
+  .tutorial-name {
+    font-size: 24px;
+  }
+
+  .tutorial-content {
+    margin-left: 20px;
+  }
+
+  .tutorial-content-header {
+    font-size: 18px;
+  }
+
+  .tutorial-content-list {
+    font-size: 14px;
+  }
+}
+
+/* Responsive adjustments for screen sizes between 768px and 1023px (small devices) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .webcloud-tutorial-container {
+    margin-left: 50px;
+  }
+
+  .tutorial-name {
+    font-size: 28px;
+  }
+
+  .tutorial-content {
+    margin-left: 30px;
+  }
+
+  .tutorial-content-header {
+    font-size: 18px;
+  }
+
+  .tutorial-content-list {
+    font-size: 16px;
+  }
+}
+
+/* Responsive adjustments for screen sizes above 1023px (large devices) */
+@media (min-width: 1024px) {
+  .webcloud-tutorial-container {
+    margin-left: 70px;
+  }
+
+  .tutorial-name {
+    font-size: 30px;
+  }
+
+  .tutorial-content {
+    margin-left: 40px;
+  }
+
+  .tutorial-content-header {
+    font-size: 20px;
+  }
+
+  .tutorial-content-list {
+    font-size: 18px;
+  }
+}

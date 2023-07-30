@@ -1,6 +1,29 @@
 .center-wrapper {
-    margin-top: 46px;
-    padding: 20px;
-    margin-left: 300px;
-    margin-bottom: 35px;
+  margin-top: 46px;
+  padding: 20px;
+  margin-left: 300px;
+  margin-bottom: 35px;
+}
+
+/* Responsive adjustments for screen sizes below 768px (mobile devices) */
+@media (max-width: 767px) {
+  .center-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
   }
+}
+
+/* Responsive adjustments for screen sizes between 768px and 1023px (small devices) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .center-wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/* Responsive adjustments for screen sizes above 1023px (large devices) */
+@media (min-width: 1024px) {
+  .center-wrapper {
+    margin-left: 300px;
+  }
+}
