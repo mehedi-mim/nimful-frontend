@@ -51,6 +51,7 @@ const AboutPage: FC = () => {
     <CenterWrapper>
 
       <div className="portfolio-center">
+        
         <section>
           <div className='portfolio-lable-lala'>
             Intro...

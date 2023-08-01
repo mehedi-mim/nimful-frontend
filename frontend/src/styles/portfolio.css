@@ -167,7 +167,7 @@
 .balloon-animation-left {
     top: 40%;
     left: 16%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     animation: float 9s ease-in-out infinite;
 }
 
@@ -242,9 +242,8 @@
 
 .portfolio-objective {
     margin-top: 50px;
-    /* border-radius: 10% 50% 10% 10% / 10% 10% 10% 10%; */
-    /* Updated border radius for a rhombus shape */
-    height: 330px;
+    height: auto;
+    /* Remove fixed height to allow the div to expand based on content */
     padding: 20px;
     background-color: #f1f1e9;
     display: flex;
@@ -259,9 +258,6 @@
     transform: translateX(-100%);
     /* Adjust this value to change the starting position  */
     transition: opacity 3.5s ease, transform 1.5s ease;
-    /* border: 2px solid red; */
-
-
 }
 
 .portfolio-objective.appear {
@@ -270,31 +266,36 @@
 }
 
 .portfolio-objective h1 {
-    font-size: 12px;
+    font-size: 20px;
+    /* Increase the font size for better readability */
     line-height: 1.5;
     font-weight: 500;
     margin-bottom: 10px;
-    padding: 80px;
+    padding: 20px;
+    /* Reduce the padding for better mobile display */
 }
 
 .portfolio-objective p {
     font-size: 16px;
     font-family: 'Times New Roman';
     margin-top: 5px;
+    word-wrap: break-word;
+    /* Add word-wrap to prevent words from overflowing the div */
 }
 
 .portfolio-skills {
-    height: 120px;
+    height: auto;
+    /* Remove fixed height to allow the div to expand based on content */
     padding: 30px;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.5);
     margin: 40px;
 }
 
-
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    /* Use auto-fit to create a flexible grid with minimum item width of 80px */
+    grid-gap: 20px;
 }
 
 .grid-item {
@@ -305,8 +306,9 @@
 .modal {
     position: absolute;
     top: calc(50% - 150px);
-    left: 110px;
-    max-height: 80px;
+    left: 120px;
+    max-width: 160px;
+    /* Adjust the max-width to prevent the modal from going outside the container */
     transform: translate(-50%, -50%);
     padding: 10px;
     background-color: #cee409;
@@ -324,22 +326,21 @@
     margin: 0;
 }
 
-
 .grid-item:hover .modal {
     opacity: 1;
     visibility: visible;
 }
 
-
 .grid-item img {
     max-height: 60px;
     max-width: 80px;
+    width: 100%;
+    /* Ensure the image fits within the grid item */
 }
 
 
 
 .portfolio-experiences {
-    height: 900px;
     padding: 20px;
     margin: 20px;
 }
@@ -347,21 +348,18 @@
 .experience-grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* Creates 6 equal columns */
     grid-gap: 10px;
-    /* Adjust the gap between grid items */
 }
 
 .experience-grid-item {
     padding: 10px;
-    height: 450px;
+    height: auto;
+    /* Remove fixed height to allow the grid items to expand based on content */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.5);
-
-
 }
 
 .experience-grid-item>div {
@@ -371,13 +369,12 @@
 }
 
 .exp-company {
-    height: inherit;
+    height: auto;
+    /* Remove fixed height to allow the div to expand based on content */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     max-width: 300px;
     background-color: #e4eee3;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.5);
@@ -395,14 +392,13 @@
 
 .exp-company p {
     font-family: 'Times New Roman';
-
 }
-
 
 .exp-describe {
     font-family: 'Times New Roman';
     color: #333;
-    height: inherit;
+    height: auto;
+    /* Remove fixed height to allow the div to expand based on content */
     background-color: #eff7ee;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 4px rgba(173, 16, 16, 0.1);
@@ -410,9 +406,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
 }
 
 .exp-describe ul {
@@ -444,8 +438,8 @@
     background-color: #f0f0f0;
     padding: 10px;
     /* border: 2px solid lightblue; */
-    height: 650px;
-    width: 700px;
+    height: 100%;
+    width: 100%;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -507,145 +501,246 @@
     color: gray;
 }
 
-
-/* Previous CSS code... */
-
-/* New CSS for responsiveness */
-@media screen and (max-width: 1200px) {
+@media (min-width: 1200px) {
     .portfolio-top {
-      flex-direction: column;
-      height: auto;
+        height: 500px;
+        margin: 40px;
+        margin-bottom: 40px;
     }
-  
+
     .portfolio-top-left,
     .portfolio-top-right {
-      width: 100%;
-      margin: 10px 0;
-      transform: none;
+        height: 400px;
     }
-  
+
     .portfolio-top-middle {
-      width: 100%;
-      height: auto;
-      margin: 10px 0;
+        height: 450px;
     }
-  
-    .portfolio-top-middle img {
-      max-width: 100%;
-      max-height: 100%;
-      border-radius: 0;
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* Styles for tablet screens (max-width: 1200px) */
+    .portfolio-container {
+        overflow-x: auto;
     }
-  
+
+    .portfolio-top {
+        flex-direction: row;
+        width: max-content;
+        height: auto;
+        margin-bottom: 40px;
+        overflow: hidden;
+
+    }
+
+    .portfolio-top-left,
+    .portfolio-top-middle {
+        width: 90%;
+        height: auto;
+        margin-right: 30px;
+    }
+
+    .portfolio-top-right {
+        margin-right: 30px;
+        height: auto;
+    }
+
     .portfolio-links {
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
-  
+
+    .small-icon {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+
+
+
+    .portfolio-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
     .portfolio-lable,
     .portfolio-lable-customize {
-      margin-left: 10px;
-      margin-top: 50px;
-      text-align: center;
+        margin-left: 10px;
+        margin-top: 50px;
+        text-align: center;
     }
-  
+
     .portfolio-lable-lala {
-      margin-left: 10px;
-      text-align: center;
+        margin-left: 10px;
+        text-align: center;
     }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .portfolio-experiences,
-    .portfolio-projects {
-      height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles for mobile screens (max-width: 768px) */
+
+
+    .portfolio-top {
+        display: flex;
+        overflow-x: auto;
+        margin: 40px 0;
+        padding: 5px;
     }
-  
+
+    .portfolio-top-left,
+    .portfolio-top-middle,
+    .portfolio-top-right {
+        flex: 1;
+        min-width: 200px;
+        height: auto;
+        margin: 10px;
+        border-radius: 0;
+    }
+
+
+    .portfolio-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .small-icon {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .portfolio-objective{
+        width: 300%;
+    }
+    
+    .portfolio-skills{
+        width: 300%;
+    }
+    .grid-container {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .portfolio-experiences{
+        width: 130%;
+    }
+    
+    .portfolio-projects{
+        width: 130%;
+        height: auto;
+    }
+
     .experience-grid-container,
     .projects-grid-container {
-      grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-  
-    .portfolio-objective,
+
     .portfolio-skills {
-      padding: 10px;
+        padding: 10px;
     }
-  
-    .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
+
+
     .projects-grid-item {
-      width: 100%;
+        width: 250%;
     }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .portfolio-top,
-    .portfolio-center {
-      margin: 20px;
+
+    .experience-grid-item{
+        width: 200%;
     }
-  
-    .portfolio-objective,
-    .portfolio-skills,
-    .portfolio-experiences,
-    .portfolio-projects {
-      margin: 20px;
+
+    .experience-grid-item {
+        width: 250%;
     }
-  
+}
+
+@media screen and (max-width: 480px) {
+
+    .portfolio-top {
+        display: flex;
+        overflow-x: auto;
+        margin: 40px 0;
+        padding: 5px;
+    }
+
+    .portfolio-top-left,
+    .portfolio-top-middle,
+    .portfolio-top-right {
+        flex: 1;
+        min-width: 200px;
+        height: auto;
+        margin: 10px;
+        border-radius: 0;
+    }
+
+
+    .portfolio-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .small-icon {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+
     .portfolio-lable,
     .portfolio-lable-customize,
     .portfolio-lable-lala {
-      margin-left: 5px;
+        margin-left: 5px;
     }
-  
+
+    .portfolio-objective {
+        width: 600%;
+    }
+
+    .portfolio-skills{
+        width: 600%;
+    }
+    .grid-container {
+        grid-template-columns: repeat(10, 1fr);
+    }
     .portfolio-objective h1 {
-      font-size: 10px;
+        font-size: 10px;
     }
-  
-    .portfolio-top-left ul li,
-    .portfolio-top-right ul li {
-      font-size: 12px;
-    }
-  
-    .portfolio-links {
-      margin-top: 10px;
-    }
-  
-    .small-icon {
-      width: 25px;
-      height: 25px;
-    }
-  
+
     .modal {
-      top: calc(50% - 90px);
-      left: 80px;
-      max-height: 60px;
+        top: calc(50% - 90px);
+        left: 80px;
+        max-height: 60px;
     }
-  
+
     .modal p {
-      font-size: 10px;
+        font-size: 10px;
     }
-  
-    .experience-grid-item,
+
+    .experience-grid-item{
+        height: auto;
+        width: 430%;
+    }
     .projects-grid-item {
-      height: auto;
+        width: 550%;
     }
-  
+
     .projects-grid-item h1 {
-      font-size: 12px;
+        font-size: 12px;
     }
-  
+
     .projects-grid-item h6 {
-      font-size: 10px;
+        font-size: 10px;
     }
-  
+
     .projects-grid-item h2 {
-      font-size: 10px;
+        font-size: 10px;
     }
-  
+
     .projects-grid-item h3 {
-      font-size: 10px;
+        font-size: 10px;
     }
-  }
-  
+}
