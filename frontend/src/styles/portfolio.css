@@ -614,22 +614,22 @@
         margin-bottom: 10px;
     }
     .portfolio-objective{
-        width: 300%;
+        width: 200%;
     }
     
     .portfolio-skills{
-        width: 300%;
+        width: 200%;
     }
     .grid-container {
         grid-template-columns: repeat(10, 1fr);
     }
 
     .portfolio-experiences{
-        width: 130%;
+        width: 100%;
     }
     
     .portfolio-projects{
-        width: 130%;
+        width: 100%;
         height: auto;
     }
 
@@ -644,7 +644,7 @@
 
 
     .projects-grid-item {
-        width: 250%;
+        width: 200%;
     }
 
     .experience-grid-item{
@@ -652,7 +652,7 @@
     }
 
     .experience-grid-item {
-        width: 250%;
+        width: 200%;
     }
 }
 
@@ -697,11 +697,11 @@
     }
 
     .portfolio-objective {
-        width: 600%;
+        width: 500%;
     }
 
     .portfolio-skills{
-        width: 600%;
+        width: 500%;
     }
     .grid-container {
         grid-template-columns: repeat(10, 1fr);
@@ -725,7 +725,7 @@
         width: 430%;
     }
     .projects-grid-item {
-        width: 550%;
+        width: 400%;
     }
 
     .projects-grid-item h1 {
