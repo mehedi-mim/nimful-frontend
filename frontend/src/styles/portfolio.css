@@ -662,17 +662,7 @@
         display: flex;
         overflow-x: auto;
         margin: 40px 0;
-        padding: 5px;
-    }
-
-    .portfolio-top-left,
-    .portfolio-top-middle,
-    .portfolio-top-right {
-        flex: 1;
-        min-width: 200px;
-        height: auto;
-        margin: 10px;
-        border-radius: 0;
+        padding: 60px;
     }
 
 
@@ -688,7 +678,7 @@
         margin-right: 10px;
         margin-bottom: 10px;
     }
-
+    
 
     .portfolio-lable,
     .portfolio-lable-customize,

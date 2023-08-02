@@ -1,3 +1,4 @@
+import CenterWrapper from '@/components/common/CenterWrapper/center_wrapper';
 import Wrapper from '@/components/common/Wrapper';
 import React, { FC, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
@@ -44,7 +45,7 @@ const ContactPage: FC = () => {
   };
 
   return (
-    <Wrapper hasLeftSidebar={true} hasRightWrapper={false}>
+    <CenterWrapper>
       <div className="contact-container">
         <ToastContainer />
         <div className="contact-form">
@@ -55,7 +56,7 @@ const ContactPage: FC = () => {
             </div>
           </div>
           <input
-            type="text"
+            type="email"
             placeholder="Your email"
             value={sender_name}
             onChange={(e) => setFullName(e.target.value)}
@@ -80,10 +81,10 @@ const ContactPage: FC = () => {
           <a href="https://www.facebook.com/mhm.cse">Facebook</a>
           <a href="https://twitter.com/mHm_cse">Twitter</a>
           <a href="mailto:mehedi.mim.bd@gmail.com">Gmail</a>
-          <a href="https://www.linkedin.com/in/mehedi-mim/">Linked in</a>
+          <a href="https://www.linkedin.com/in/mehedi-mim/">Linkedin</a>
         </div>
       </div>
-    </Wrapper>
+    </CenterWrapper>
   );
 };
 

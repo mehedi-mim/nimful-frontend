@@ -100,8 +100,32 @@
 
 /* Specific styles for screen sizes below 768px (mobile devices) */
 @media (max-width: 767px) {
+  .contact-links a {
+    display: inline-block;
+    background-color: #0d524c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    display: none;
+  }
   .contact-container {
     margin-left: 10px;
+    padding-bottom: 40px;
+    overflow-y: auto;
+  }
+  .cloud {
+    position: absolute;
+    top: -60px;
+    right: -50px;
+    width: 160px;
+    height: 80px;
+    background-color: #cee409;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact-form {
@@ -136,9 +160,6 @@
 
 /* Specific styles for screen sizes above 1023px (large devices) */
 @media (min-width: 1024px) {
-  .contact-container {
-    margin-left: 250px;
-  }
 
   .contact-form {
     max-width: 600px;

@@ -33,7 +33,7 @@
 /* Responsive adjustments for screen sizes below 768px (mobile devices) */
 @media (max-width: 767px) {
   .webcloud-tutorial-container {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .tutorial-name {
@@ -41,11 +41,15 @@
   }
 
   .tutorial-content {
-    margin-left: 20px;
+    margin-left: 10px;
+    max-height: 250px;
+    overflow-y: scroll;
+
   }
 
-  .tutorial-content-header {
+  .tutorial-content-header,h2 {
     font-size: 18px;
+    text-align: left;
   }
 
   .tutorial-content-list {
