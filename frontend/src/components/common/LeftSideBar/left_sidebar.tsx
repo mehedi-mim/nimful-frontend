@@ -29,6 +29,11 @@ const LeftSideBar = () => {
         <li><a href="/portfolio">Who am I?</a></li>
         <li><a href="/contact">Contact me</a></li>
       </ul>
+
+      <div className="sidebar-header">Privacy</div>
+      <ul className="sidebar-subsections">
+        <li><a href="/privacy">Terms and Conditions</a></li>
+      </ul>
     </div>
   );
 };

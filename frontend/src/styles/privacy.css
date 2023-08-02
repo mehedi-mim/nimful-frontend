@@ -1,0 +1,100 @@
+.privacy-container {
+    margin-top: 40px;
+    margin-left: 70px;
+  }
+
+.privacy-name{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  max-width: 500px;
+}
+
+.privacy-content{
+  line-height: normal;
+  max-width: 80%
+}
+.privacy-content-header{
+  margin-top: 20px;
+  line-height: normal;
+}
+.privacy-content-header,h2{
+  color: rgb(14, 14, 14);
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: left;
+
+}
+
+.tutorial-content-para,p{
+  font-family: 'Times New Roman', Times, serif;
+  color: gray;
+}
+
+
+/* Responsive adjustments for screen sizes below 768px (mobile devices) */
+@media (max-width: 767px) {
+  .privacy-container {
+    margin-left: 10px;
+  }
+
+  .privacy-name {
+    font-size: 24px;
+  }
+
+  .privacy-content {
+    margin-left: 10px;
+    max-height: 250px;
+    overflow-y: scroll;
+
+  }
+
+  .privacy-content-header,h2 {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .privacy-content-para {
+    font-size: 14px;
+  }
+}
+
+/* Responsive adjustments for screen sizes between 768px and 1023px (small devices) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .privacy-container {
+    margin-left: 50px;
+  }
+
+  .privacy-name {
+    font-size: 28px;
+  }
+
+
+  .privacy-content-header {
+    font-size: 18px;
+  }
+
+  .privacy-content-para {
+    font-size: 16px;
+  }
+}
+
+/* Responsive adjustments for screen sizes above 1023px (large devices) */
+@media (min-width: 1024px) {
+  .privacy-container {
+    margin-left: 70px;
+  }
+
+  .privacy-name {
+    font-size: 30px;
+  }
+
+
+  .privacy-content-header {
+    font-size: 20px;
+  }
+
+  .privacy-content-para {
+    font-size: 18px;
+  }
+}
