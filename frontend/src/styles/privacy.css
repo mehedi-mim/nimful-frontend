@@ -14,9 +14,10 @@
   line-height: normal;
   max-width: 80%
 }
-.privacy-content-header{
+.privacy-content-header h2{
   margin-top: 20px;
   line-height: normal;
+  font-weight: bold;
 }
 .privacy-content-header,h2{
   color: rgb(14, 14, 14);
@@ -28,7 +29,7 @@
 
 .tutorial-content-para,p{
   font-family: 'Times New Roman', Times, serif;
-  color: gray;
+  color: rgb(69, 68, 68);
 }
 
 
