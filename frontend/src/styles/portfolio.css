@@ -600,7 +600,9 @@
         margin: 10px;
         border-radius: 0;
     }
-
+    .portfolio-top-right {
+        margin-left: 0%;
+    }
 
     .portfolio-links {
         display: flex;
@@ -664,7 +666,9 @@
         margin: 40px 0;
         padding: 60px;
     }
-
+    .portfolio-top-right {
+        margin-left: 0%;
+    }
 
     .portfolio-links {
         display: flex;
