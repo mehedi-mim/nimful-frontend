@@ -19,9 +19,12 @@ const ParentComponent = () => {
     { text: 'no-cloud.com', value: 800 },
     { text: 'hurry-up.com', value: 100 },
     { text: 'nimful.com', value: 1000 },
-    { text: 'no-visits.com', value: 100 },
+    { text: 'nazia.com', value: 100 },
     { text: 'nothing.com', value: 200 },
-    { text: 'go-fast.com', value: 800 }
+    { text: 'linkedin.com', value: 800 },
+    { text: 'google.com', value: 100 },
+    { text: 'stackoverflow.com', value: 200 },
+    { text: 'netflix.com', value: 800 }
   ]);
 
   useEffect(() => {
@@ -46,7 +49,7 @@ const ParentComponent = () => {
     if (process.env.NEXT_PUBLIC_BACKEND_BASE_URL) {
       fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/web-cloud`, {
         headers: {
-          'access_token': `${access_token}`
+          'Authorization': `${access_token}`
         }
       })
         .then(response => response.json())

@@ -22,7 +22,7 @@ const ProfilePage: FC = () => {
     if (process.env.NEXT_PUBLIC_BACKEND_BASE_URL) {
       fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/self-profile`, {
         headers: {
-          'Authorization': `Bearer ${token}`
+          'Authorization': `${token}`
         }
       })
         .then(response => response.json())
@@ -54,7 +54,7 @@ const ProfilePage: FC = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'access_token': accessToken!
+          'Authorization': `${accessToken}`
         }
       })
         .then(response => response.json())
