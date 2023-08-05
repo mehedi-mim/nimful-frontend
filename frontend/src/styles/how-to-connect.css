@@ -23,8 +23,9 @@
   margin-top: 10px;
 }
 
-.tutorial-content-list{
+.tutorial-content-list li{
   font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
 }
 .extension-link{
   color: blue;
