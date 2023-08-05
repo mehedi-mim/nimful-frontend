@@ -54,14 +54,9 @@
 
   .about-home {
     margin-left: 20px;
-
-
-  }
-  .about-centered-container h2{
     overflow-y: scroll;
-    max-height: 250px;
+    max-height: 300px;
   }
-
 
 }
 

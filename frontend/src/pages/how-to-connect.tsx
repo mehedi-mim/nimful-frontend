@@ -25,7 +25,7 @@ const WebCloudTutorial: FC = () => {
                     </div>
                     <div className='tutorial-content-list'>
                             <li>Currently this feature only for chrome users.</li>
-                            <li>Go to chrome web store and download extension <a href='https://chrome.google.com/webstore/category/extensions?gl=IN' className='extension-link'>Nimful</a>.</li>
+                            <li>Go to chrome web store and download extension <a href='https://chrome.google.com/webstore/detail/nimful/ndphdoaamlnblllclljiphalnaigbofl' className='extension-link'>Nimful</a>.</li>
                             <li>After installation when you open the extension, it will ask you for a seed. You can click generate seed and it will redirect you to nimful website.</li>
                         </div>
                     <div className='tutorial-content-header'>

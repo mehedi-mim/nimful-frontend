@@ -65,7 +65,6 @@ const AboutPage: FC = () => {
               <li> 💻 Python Developer.</li>
               <li> 🏆 4 Live Projects.</li>
               <li> 🧩 REST,GraphQL.</li>
-              <li> 🔮 Dockerized multiple projects.</li>
               <li> 🌐 Languages( Bangla, English, Hindi).</li>
 
             </ul>
@@ -89,7 +88,6 @@ const AboutPage: FC = () => {
               <li>📊 Datastructure & Algorithms. </li>
               <li>🏆 2000+ problems solved.  </li>
               <li>🎓 ACM ICPC participation.  </li>
-              <li>🎯 Yellow coder at toph.co  </li>
               <li>🤝 Team player.</li>
             </ul>
           </div>
@@ -99,13 +97,13 @@ const AboutPage: FC = () => {
         <section className="portfolio-objective">
           <h1>
             <p>
-              I extend my warmest greetings as I introduce myself, Mehedi Hasan Mim, an accomplished Software Engineer currently affiliated with the distinguished organization, Vivasoft Limited. With an unwavering dedication to the pursuit of excellence, I have diligently honed my expertise in the art of website development over the course of the past 2.5 years. Prior to this, I had the privilege of immersing myself in the intricacies of mobile application development, and I have now directed my focus towards the dynamic realm of backend software engineering, specializing in the utilization of the esteemed Python programming language.
+            I'm Mehedi Hasan Mim, an accomplished Software Engineer affiliated with Vivasoft Limited. Over the past 2.5 years, I've dedicated myself to mastering website development. My journey started with a deep dive into mobile application intricacies, and I've now shifted my focus to dynamic backend software engineering, specializing in Python.
             </p>
             <p>
-              My journey as a pivotal member of the Vivasoft team has been defined by a deep-seated responsibility for spearheading critical tasks associated with a diverse range of client projects. As a seasoned professional, I bring forth a wealth of expertise in conducting meticulous requirement analysis, crafting intricate system designs, seamlessly integrating new release features. Leveraging my experiences across various domains, I have diligently cultivated a versatile skill set, enabling me to adroitly navigate through complex challenges and intricacies that often arise during the development lifecycle.
+            As a pivotal member of the Vivasoft team, I've shouldered responsibilities for critical tasks across diverse client projects. With extensive experience, I excel in meticulous requirement analysis, intricate system design, and seamless feature integration. My versatile skill set, developed through various domains, equips me to navigate complex challenges that arise during the development lifecycle.
             </p>
             <p>
-              With an acute understanding that every project presents its unique set of complexities, I approach each endeavor with a meticulous attention to detail, ensuring that I adapt my expertise to cater to the specific requirements and intricacies of each task. My unwavering focus on staying abreast of the latest industry trends and technological advancements empowers me to leverage cutting-edge tools and methodologies, thereby facilitating the development of highly scalable, efficient, and secure software solutions.
+            Recognizing the unique complexities of each project, I approach every endeavor with meticulous attention. I adapt my expertise to cater to specific requirements, maintaining a keen eye for detail. My commitment to staying updated with industry trends and technological advancements allows me to leverage cutting-edge tools and methodologies. This empowers me to create highly scalable, efficient, and secure software solutions.
             </p>
           </h1>
         </section>
