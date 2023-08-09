@@ -1,31 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic'
-import Wrapper from '@/components/common/Wrapper';
+import dynamic from 'next/dynamic';
 import { ToastContainer } from 'react-toastify';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CenterWrapper from '@/components/common/CenterWrapper/center_wrapper';
+import Wrapper from '@/components/common/Wrapper';
+
 const WordCloud = dynamic(
   () => import('react-d3-cloud'),
   { ssr: false }
-)
+);
 
 const ParentComponent = () => {
-  const [can_show_cloud, setCloud] = useState(false)
+  const [can_show_cloud, setCloud] = useState(false);
 
-  const [data, setData] = useState([
-    { text: 'login.com', value: 1000 },
-    { text: 'signup.com', value: 200 },
-    { text: 'no-cloud.com', value: 800 },
-    { text: 'hurry-up.com', value: 100 },
-    { text: 'nimful.com', value: 1000 },
-    { text: 'nazia.com', value: 100 },
-    { text: 'nothing.com', value: 200 },
-    { text: 'linkedin.com', value: 800 },
-    { text: 'google.com', value: 100 },
-    { text: 'stackoverflow.com', value: 200 },
-    { text: 'netflix.com', value: 800 }
-  ]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -35,9 +24,8 @@ const ParentComponent = () => {
         setTimeout(() => {
           window.location.href = '/login';
         }, 4000);
-      }
-      else {
-        setCloud(true)
+      } else {
+        setCloud(true);
       }
     });
 
@@ -55,7 +43,8 @@ const ParentComponent = () => {
         .then(response => response.json())
         .then(responseData => {
           if (Array.isArray(responseData) && responseData.length === 0) {
-            setData(data);
+            setData([]);
+            setCloud(false);
           } else {
             setData(responseData);
           }
@@ -63,7 +52,6 @@ const ParentComponent = () => {
         .catch(error => {
           console.log(error);
         });
-
     }
   }, []);
 
@@ -74,13 +62,42 @@ const ParentComponent = () => {
         <div className="webcloud-container">
           {can_show_cloud ? (
             <WordCloud data={data} />
-          ) : <div className='centered-container-webcloud'>
-            <img src="/images/webcloud/show-fixed.png" alt="Profile"></img>
-          </div>}
+          ) : (
+            <div className='centered-container-webcloud'>
+              <p>No data stored yet!</p>
+            </div>
+          )}
         </div>
+        {can_show_cloud && (
+          <div className='webcloud-clear-history'>
+            <button
+              className='clear-history-button'
+              onClick={() => {
+                const access_token = localStorage.getItem('access_token');
+                if (process.env.NEXT_PUBLIC_BACKEND_BASE_URL) {
+                  fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/api/v1/clear-history`, {
+                    method: 'GET',
+                    headers: {
+                      'Authorization': `${access_token}`
+                    }
+                  })
+                    .then(response => response.json())
+                    .then(responseData => {
+                      toast.success('History cleared successfully.');
+                    })
+                    .catch(error => {
+                      console.log(error);
+                      toast.error('Error clearing history.');
+                    });
+                }
+              }}
+            >
+              Clear History
+            </button>
+          </div>
+        )}
       </div>
     </CenterWrapper>
-
   );
 };
 

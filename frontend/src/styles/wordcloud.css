@@ -9,6 +9,10 @@
   width: 100%;
   max-width: 800px;
   height: 600px;
+  border: 2px solid rgb(170, 196, 133);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .centered-container-webcloud {
@@ -17,8 +21,36 @@
   margin-top: 70px;
 }
 
+.webcloud-clear-history {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.clear-history-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.centered-container-webcloud p{
+   color: gray;
+   text-align: center;
+}
+
 /* Responsive adjustments for screen sizes below 768px (mobile devices) */
 @media (max-width: 767px) {
+  .webcloud-clear-history {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .clear-history-button {
+    font-size: 10px;
+  }
   .webcloud-page {
     /* Adjust the margin to center the content horizontally */
     margin-left: auto;
@@ -26,7 +58,7 @@
   }
 
   .webcloud-page .webcloud-container {
-    height: 400px;
+    max-height: 200px;
   }
 
   .centered-container-webcloud {
