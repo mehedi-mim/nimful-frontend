@@ -1,4 +1,3 @@
-/* Common styles for all screen sizes */
 .webcloud-page {
   display: flex;
   flex-direction: column;
@@ -6,19 +5,13 @@
 }
 
 .webcloud-page .webcloud-container {
+  /* border: 5px solid rgb(170, 196, 133); */
   width: 100%;
   max-width: 800px;
   height: 600px;
-  border: 2px solid rgb(170, 196, 133);
-  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.centered-container-webcloud {
-  text-align: left;
-  margin-bottom: 20px;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 .webcloud-clear-history {
@@ -26,9 +19,8 @@
   display: flex;
   justify-content: center;
 }
-
 .clear-history-button {
-  background-color: red;
+  background-color: rgb(170, 196, 133);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -36,11 +28,18 @@
   cursor: pointer;
   font-size: 16px;
 }
-.centered-container-webcloud p{
-   color: gray;
-   text-align: center;
+
+.centered-container-webcloud {
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Responsive adjustments for screen sizes below 768px (mobile devices) */
 /* Responsive adjustments for screen sizes below 768px (mobile devices) */
 @media (max-width: 767px) {
   .webcloud-clear-history {
@@ -81,6 +80,10 @@
   .centered-container-webcloud {
     margin-top: 60px;
   }
+  .centered-container-webcloud p{
+    color: gray;
+    text-align: center;
+ }
 }
 
 /* Responsive adjustments for screen sizes above 1023px (large devices) */

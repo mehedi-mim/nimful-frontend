@@ -84,6 +84,7 @@ const ParentComponent = () => {
                     .then(response => response.json())
                     .then(responseData => {
                       toast.success('History cleared successfully.');
+                      window.location.href = '/webcloud';
                     })
                     .catch(error => {
                       console.log(error);
