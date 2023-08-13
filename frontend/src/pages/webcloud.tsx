@@ -12,7 +12,7 @@ const WordCloud = dynamic(
 
 const ParentComponent = () => {
   const [can_show_cloud, setCloud] = useState(false);
-  const [can_show_cancel,setCancel] = useState(false)
+  const [can_show_cancel, setCancel] = useState(false)
 
   const [data, setData] = useState([]);
 
@@ -20,7 +20,7 @@ const ParentComponent = () => {
     const timer = setTimeout(() => {
       const access_token = localStorage.getItem('access_token');
       if (!access_token) {
-        toast.error('Log in to stay more!');
+        toast.error('Login first!');
         setTimeout(() => {
           window.location.href = '/login';
         }, 3000);
@@ -60,15 +60,16 @@ const ParentComponent = () => {
     <CenterWrapper>
       <div className="webcloud-page">
         <ToastContainer />
-        <div className="webcloud-container">
           {can_show_cloud ? (
-            <WordCloud data={data} />
+            <div className="webcloud-container">
+              <WordCloud data={data} />
+            </div>
+
           ) : (
             <div className='centered-container-webcloud'>
               <p>No data stored yet!</p>
             </div>
           )}
-        </div>
         {can_show_cancel && (
           <div className='webcloud-clear-history'>
             <button

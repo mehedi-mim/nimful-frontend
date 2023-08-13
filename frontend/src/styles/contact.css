@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Adjust the height as needed */
+  height: 80vh;
+  /* Adjust the height as needed */
 }
 
 .contact-form {
@@ -76,7 +77,8 @@
   height: 140px;
   border: 2px solid #cee409;
   border-radius: 50%;
-  margin: 0 auto; /* Center the image horizontally */
+  margin: 0 auto;
+  /* Center the image horizontally */
 }
 
 .cloud {
@@ -101,20 +103,20 @@
 
 /* Specific styles for screen sizes below 768px (mobile devices) */
 @media (max-width: 767px) {
-  .contact-links a {
-    display: inline-block;
-    background-color: #0d524c;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 12px;
-    display: none;
-  }
   .contact-container {
     margin-left: 10px;
-    padding-bottom: 40px;
-    overflow-y: auto;
+    padding-bottom: 5px;
+    height: 550px;
+    max-width: 100%;
+
   }
+
+  .contact-form {
+    max-width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+
   .cloud {
     position: absolute;
     top: -60px;
@@ -129,12 +131,20 @@
     align-items: center;
   }
 
-  .contact-form {
-    max-width: 100%;
-  }
+
 
   .contact-form button {
     width: 100%;
+  }
+
+  .contact-links a {
+    display: inline-block;
+    background-color: #0d524c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    display: none;
   }
 
   .contact-form img {

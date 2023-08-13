@@ -2,16 +2,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  /* border: 2px solid red ; */
+
 }
 
-.webcloud-page .webcloud-container {
-  /* border: 5px solid rgb(170, 196, 133); */
+.webcloud-container {
+  border: 5px solid rgb(170, 196, 133);
   width: 100%;
-  max-width: 800px;
-  height: 600px;
+  max-width: 750px;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+
+.centered-container-webcloud {
+  margin-bottom: 20px;
+  margin-top: 70px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(170, 196, 133);
 }
 
 .webcloud-clear-history {
@@ -19,6 +34,7 @@
   display: flex;
   justify-content: center;
 }
+
 .clear-history-button {
   background-color: rgb(170, 196, 133);
   color: white;
@@ -29,15 +45,7 @@
   font-size: 16px;
 }
 
-.centered-container-webcloud {
-  text-align: left;
-  margin-bottom: 20px;
-  margin-top: 70px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 /* Responsive adjustments for screen sizes below 768px (mobile devices) */
 /* Responsive adjustments for screen sizes below 768px (mobile devices) */
@@ -47,21 +55,35 @@
     display: flex;
     justify-content: center;
   }
+
   .clear-history-button {
     font-size: 10px;
   }
+
   .webcloud-page {
     /* Adjust the margin to center the content horizontally */
     margin-left: auto;
     margin-right: auto;
   }
 
-  .webcloud-page .webcloud-container {
-    max-height: 200px;
+  .webcloud-container {
+    border: 5px solid rgb(170, 196, 133);
+    width: 100%;
+    max-width: 750px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
   }
 
   .centered-container-webcloud {
-    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(170, 196, 133);
   }
 }
 
@@ -80,10 +102,11 @@
   .centered-container-webcloud {
     margin-top: 60px;
   }
-  .centered-container-webcloud p{
+
+  .centered-container-webcloud p {
     color: gray;
     text-align: center;
- }
+  }
 }
 
 /* Responsive adjustments for screen sizes above 1023px (large devices) */
