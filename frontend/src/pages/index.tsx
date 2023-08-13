@@ -10,7 +10,7 @@ const Home: FC = () => {
             <img src="/images/home/home.webp" alt="Profile" className="profile-image"></img>
           </div>
           <div className="centered-container">
-            <h2>Welcome to nimful... 🖤, want to see an exciting feature ? <a className='go' href='/webcloud'>click</a> </h2>
+            <h2>Welcome to nimful... 🖤, we're glad you here! roam arround? <a className='go' href='/webcloud'>click</a> </h2>
           </div>
         </div>
       </CenterWrapper>
