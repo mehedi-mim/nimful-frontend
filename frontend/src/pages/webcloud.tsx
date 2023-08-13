@@ -4,7 +4,6 @@ import { ToastContainer } from 'react-toastify';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CenterWrapper from '@/components/common/CenterWrapper/center_wrapper';
-import Wrapper from '@/components/common/Wrapper';
 
 const WordCloud = dynamic(
   () => import('react-d3-cloud'),
@@ -13,6 +12,7 @@ const WordCloud = dynamic(
 
 const ParentComponent = () => {
   const [can_show_cloud, setCloud] = useState(false);
+  const [can_show_cancel,setCancel] = useState(false)
 
   const [data, setData] = useState([]);
 
@@ -20,10 +20,10 @@ const ParentComponent = () => {
     const timer = setTimeout(() => {
       const access_token = localStorage.getItem('access_token');
       if (!access_token) {
-        toast.error('Please log in to stay more time...!');
+        toast.error('Log in to stay more!');
         setTimeout(() => {
           window.location.href = '/login';
-        }, 4000);
+        }, 3000);
       } else {
         setCloud(true);
       }
@@ -47,6 +47,7 @@ const ParentComponent = () => {
             setCloud(false);
           } else {
             setData(responseData);
+            setCancel(true)
           }
         })
         .catch(error => {
@@ -68,7 +69,7 @@ const ParentComponent = () => {
             </div>
           )}
         </div>
-        {can_show_cloud && (
+        {can_show_cancel && (
           <div className='webcloud-clear-history'>
             <button
               className='clear-history-button'

@@ -36,9 +36,8 @@ const WebCloudTutorial: FC = () => {
                     </div>
                     <div className='privacy-content-para'>
                         <p> We adhere to a common practice involving the utilization of  data collection at nimful.com through our chrome extension Nimful.
-                            These data  are collected when visitors access websites and that extension is connected. This is a routine procedure followed by all hosting
-                            companies and is integral to hosting services' analytical processes. The data amassed through these visits encompass internet protocol (IP) addresses,
-                            Internet Service Provider (ISP), visited domains ,emails through logged in , date and time stamps, entry and exit pages, and conceivably the count of clicks.
+                            These data  are collected when visitors access websites and that extension is connected.The data amassed through these visits encompass internet protocol (IP) addresses,
+                            Internet Service Provider (ISP), visited domains ,emails through logged in ,date and time stamps, entry and exit pages, and conceivably the count of clicks.
                             Importantly, none of this data is interconnected with any business purposes.
                             The rationale behind collecting this data is to dissect trends, manage the website, monitor users' navigation across the site, and gather demographic insights.
                             This Privacy Policy pertains exclusively to our digital undertakings and remains effective solely for individuals visiting our website,
