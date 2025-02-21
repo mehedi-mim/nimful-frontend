@@ -26,13 +26,5 @@ To start developing the application, ensure that Node.js is installed on your ma
 npm run dev
 ```
 
-## Deployment
-
-The project can be deployed using Docker Compose. The `docker-compose.yml` file is included in the repository and can be used to deploy the application.
-
-To deploy the application, execute the following command in the terminal.
-
-```bash
-docker-compose up -d
 
 
